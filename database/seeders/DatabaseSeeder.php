@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
       DesaSeeder::class,
       AsramaSeeder::class,
       KamarSeeder::class,
-      UserSeeder::class,
+      SantriSeeder::class,
     ]);
   }
 }

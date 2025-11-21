@@ -65,8 +65,12 @@ class User extends Authenticatable
   {
     return $this->morphTo();
   }
-  public function getAksesAttribute()
+  public function getAksesDataAttribute()
   {
     return $this->akses()->first();
+  }
+  public function santri()
+  {
+    return $this->hasOne(Santri::class);
   }
 }
