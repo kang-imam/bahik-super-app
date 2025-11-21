@@ -36,4 +36,8 @@ class Santri extends Model
   {
     return $this->belongsTo(JenisKelamin::class);
   }
+  public function walis()
+  {
+    return $this->hasMany(SantriWali::class);
+  }
 }
