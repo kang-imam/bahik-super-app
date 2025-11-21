@@ -15,7 +15,6 @@ class RoleSeeder extends Seeder
       'Super Admin',
       'Dewan Kiai',
       'Admin Santri',
-      'Admin Alumni',
       'Admin Sekretaris',
       'Admin Bendahara',
       'Admin Keamanan',
@@ -23,11 +22,15 @@ class RoleSeeder extends Seeder
       'Admin Kesehatan',
       'Admin Asrama',
       'Admin Kamar',
+      'Admin Alumni Pusat',
+      'Admin Alumni Wilayah',
+      'Admin Alumni Cabang',
+      'Admin Alumni Regional',
+      'Admin Alumni Daerah',
       'Santri',
       'Wali Santri',
       'Alumni',
     ];
-
     foreach ($roles as $role) {
       Role::firstOrCreate(['name' => $role]);
     }
