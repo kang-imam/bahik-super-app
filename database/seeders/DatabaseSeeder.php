@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
       KotaSeeder::class,
       KecamatanSeeder::class,
       DesaSeeder::class,
+      AsramaSeeder::class,
+      KamarSeeder::class,
       UserSeeder::class,
     ]);
   }
