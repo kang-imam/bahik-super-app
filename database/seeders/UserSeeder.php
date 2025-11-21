@@ -12,12 +12,9 @@ class UserSeeder extends Seeder
   public function run(): void
   {
     $roles = Role::all();
-    $aksesCounter = 1; // untuk id_akses unik
-
+    $aksesCounter = 1;
     foreach ($roles as $role) {
-      // hapus spasi dan karakter selain huruf/digit dari nama role
       $roleNameClean = strtolower(preg_replace('/[^a-zA-Z0-9]/', '', $role->name));
-
       for ($i = 1; $i <= 2; $i++) {
         User::create([
           'name' => $role->name . ' User ' . $i,
