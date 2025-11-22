@@ -26,9 +26,13 @@ use App\Http\Controllers\User\Alumni\DashboardAlumniController;
 
 Route::get('/lang/{locale}', [LanguageController::class, 'swap']);
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [DashboardUserBaruController::class, 'index'])->name('dashboard');
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
+
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role'])->group(function () {
   Route::get('/user-baru-dashboard', [DashboardUserBaruController::class, 'index'])->name('user-baru-dashboard');
+});
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role'])->group(function () {
   Route::get('/super-admin-dashboard', [DashboardSuperAdminController::class, 'index'])->name('super-admin-dashboard');
   Route::get('/dewan-kiai-dashboard', [DashboardDewanKiaiController::class, 'index'])->name('dewan-kiai-dashboard');
   Route::get('/admin-santri-dashboard', [DashboardAdminSantriController::class, 'index'])->name('admin-santri-dashboard');
