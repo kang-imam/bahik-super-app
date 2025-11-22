@@ -62,6 +62,60 @@ class SantriSeeder extends Seeder
         'tanggal_lahir' => '2011-02-28',
         'jenis_kelamin' => $putra,
       ],
+      [
+        'name' => 'Farhan Alfarizi',
+        'email' => 'farhan@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Farhan',
+        'tempat_lahir' => 'Semarang',
+        'tanggal_lahir' => '2011-06-10',
+        'jenis_kelamin' => $putra,
+      ],
+      [
+        'name' => 'Lina Salsabila',
+        'email' => 'lina@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Lina',
+        'tempat_lahir' => 'Medan',
+        'tanggal_lahir' => '2010-09-01',
+        'jenis_kelamin' => $putri,
+      ],
+      [
+        'name' => 'Toni Purnama',
+        'email' => 'toni@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Toni',
+        'tempat_lahir' => 'Padang',
+        'tanggal_lahir' => '2010-04-20',
+        'jenis_kelamin' => $putra,
+      ],
+      [
+        'name' => 'Indah Permatasari',
+        'email' => 'indah@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Indah',
+        'tempat_lahir' => 'Makassar',
+        'tanggal_lahir' => '2011-12-14',
+        'jenis_kelamin' => $putri,
+      ],
+      [
+        'name' => 'Syarif Hidayat',
+        'email' => 'syarif@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Syarif',
+        'tempat_lahir' => 'Bandung',
+        'tanggal_lahir' => '2010-05-05',
+        'jenis_kelamin' => $putra,
+      ],
+      [
+        'name' => 'Maya Sari',
+        'email' => 'maya@example.com',
+        'password' => 'password123',
+        'nama_panggilan' => 'Maya',
+        'tempat_lahir' => 'Bali',
+        'tanggal_lahir' => '2011-08-12',
+        'jenis_kelamin' => $putri,
+      ],
     ];
     foreach ($santris as $data) {
       $user = User::create([
@@ -69,8 +123,10 @@ class SantriSeeder extends Seeder
         'email' => $data['email'],
         'password' => Hash::make($data['password']),
         'role_id' => $santriRole->id,
+        'id_akses_type' => Santri::class,
+        'id_akses' => null,
       ]);
-      Santri::create([
+      $santri = Santri::create([
         'user_id' => $user->id,
         'nama_panggilan' => $data['nama_panggilan'],
         'tempat_lahir' => $data['tempat_lahir'],

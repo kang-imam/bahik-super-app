@@ -38,6 +38,10 @@ class Santri extends Model
   }
   public function walis()
   {
-    return $this->hasMany(SantriWali::class);
+    return $this->hasMany(WaliSantri::class);
+  }
+  public function alumni()
+  {
+    return $this->hasOne(Alumni::class);
   }
 }

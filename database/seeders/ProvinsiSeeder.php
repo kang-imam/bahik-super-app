@@ -3,7 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Provinsi;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Role;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class ProvinsiSeeder extends Seeder
@@ -50,9 +51,18 @@ class ProvinsiSeeder extends Seeder
       'Papua Selatan',
       'Papua Barat Daya',
     ];
+    $role = Role::where('name', 'Admin Alumni Wilayah')->first();
     foreach ($provinsis as $nama) {
-      Provinsi::create([
+      $provinsi = Provinsi::create([
         'nama' => $nama,
+      ]);
+      User::create([
+        'name' => 'Admin Alumni Wilayah ' . $nama,
+        'email' => 'admin.wilayah.' . str_replace(' ', '_', strtolower($nama)) . '@domain.com',
+        'password' => bcrypt('password123'),
+        'role_id' => $role->id,
+        'id_akses_type' => Provinsi::class,
+        'id_akses' => $provinsi->id,
       ]);
     }
   }

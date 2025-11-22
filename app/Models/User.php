@@ -75,6 +75,10 @@ class User extends Authenticatable
   }
   public function santriSebagaiWali()
   {
-    return $this->hasMany(SantriWali::class, 'user_id');
+    return $this->hasMany(WaliSantri::class, 'user_id');
+  }
+  public function alumni()
+  {
+    return $this->hasOne(Alumni::class, 'santri_id', 'santri_id');
   }
 }

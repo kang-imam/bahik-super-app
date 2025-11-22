@@ -3,11 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\Role;
-use App\Models\Provinsi;
-use App\Models\Kota;
-use App\Models\Kecamatan;
-use App\Models\Desa;
 use App\Models\User;
+use App\Models\JenisKelamin;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -15,63 +12,80 @@ class UserSeeder extends Seeder
 {
   public function run(): void
   {
-    $roleAdminProvinsi = Role::where('name', 'Admin Alumni Wilayah')->first();
-    $provinsi = Provinsi::first();
-    User::create([
-      'name' => 'Admin Provinsi',
-      'email' => 'adminprovinsi@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleAdminProvinsi->id,
-      'id_akses_type' => 'App\\Models\\Provinsi',
-      'id_akses' => $provinsi->id,
-    ]);
-    $roleAdminKota = Role::where('name', 'Admin Alumni Cabang')->first();
-    $kota = Kota::first();
-    User::create([
-      'name' => 'Admin Kota',
-      'email' => 'adminkota@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleAdminKota->id,
-      'id_akses_type' => 'App\\Models\\Kota',
-      'id_akses' => $kota->id,
-    ]);
-    $roleAdminKecamatan = Role::where('name', 'Admin Alumni Regional')->first();
-    $kecamatan = Kecamatan::first();
-    User::create([
-      'name' => 'Admin Kecamatan',
-      'email' => 'adminkecamatan@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleAdminKecamatan->id,
-      'id_akses_type' => 'App\\Models\\Kecamatan',
-      'id_akses' => $kecamatan->id,
-    ]);
-    $roleAdminDesa = Role::where('name', 'Admin Alumni Daerah')->first();
-    $desa = Desa::first();
-    User::create([
-      'name' => 'Admin Desa',
-      'email' => 'admindesa@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleAdminDesa->id,
-      'id_akses_type' => 'App\\Models\\Desa',
-      'id_akses' => $desa->id,
-    ]);
-    $roleSantri = Role::where('name', 'Santri')->first();
-    User::create([
-      'name' => 'Santri 1',
-      'email' => 'santri1@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleSantri->id,
-      'id_akses_type' => 'App\\Models\\Desa',
-      'id_akses' => $desa->id,
-    ]);
-    $roleWaliSantri = Role::where('name', 'Wali Santri')->first();
-    User::create([
-      'name' => 'Wali Santri 1',
-      'email' => 'walisantri1@example.com',
-      'password' => Hash::make('password123'),
-      'role_id' => $roleWaliSantri->id,
-      'id_akses_type' => 'App\\Models\\Desa',
-      'id_akses' => $desa->id,
-    ]);
+    $roles = Role::whereIn('name', [
+      'Admin Santri',
+      'Admin Sekretaris',
+      'Admin Bendahara',
+      'Admin Keamanan',
+      'Admin Pendidikan',
+      'Admin Kesehatan'
+    ])->get();
+    $jenisKelaminPutra = JenisKelamin::where('kode', 'Pa')->first();
+    $jenisKelaminPutri = JenisKelamin::where('kode', 'Pi')->first();
+    if (!$jenisKelaminPutra || !$jenisKelaminPutri) {
+      return;
+    }
+    foreach ($roles as $role) {
+      User::create([
+        'name' => $role->name . ' Putra',
+        'email' => strtolower($role->name) . '_putra@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $role->id,
+        'id_akses_type' => JenisKelamin::class,
+        'id_akses' => $jenisKelaminPutra->id,
+      ]);
+      User::create([
+        'name' => $role->name . ' Putri',
+        'email' => strtolower($role->name) . '_putri@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $role->id,
+        'id_akses_type' => JenisKelamin::class,
+        'id_akses' => $jenisKelaminPutri->id,
+      ]);
+    }
+    $userBaruRole = Role::where('name', 'User Baru')->first();
+    if ($userBaruRole) {
+      User::create([
+        'name' => 'User Baru',
+        'email' => 'user_baru@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $userBaruRole->id,
+        'id_akses_type' => null,
+        'id_akses' => null,
+      ]);
+    }
+    $superAdminRole = Role::where('name', 'Super Admin')->first();
+    if ($superAdminRole) {
+      User::create([
+        'name' => 'Super Admin',
+        'email' => 'super_admin@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $superAdminRole->id,
+        'id_akses_type' => null,
+        'id_akses' => null,
+      ]);
+    }
+    $dewanKiaiRole = Role::where('name', 'Dewan Kiai')->first();
+    if ($dewanKiaiRole) {
+      User::create([
+        'name' => 'Dewan Kiai',
+        'email' => 'dewan_kiai@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $dewanKiaiRole->id,
+        'id_akses_type' => null,
+        'id_akses' => null,
+      ]);
+    }
+    $adminAlumniPusatRole = Role::where('name', 'Admin Alumni Pusat')->first();
+    if ($adminAlumniPusatRole) {
+      User::create([
+        'name' => 'Admin Alumni Pusat',
+        'email' => 'admin_alumni_pusat@example.com',
+        'password' => Hash::make('password123'),
+        'role_id' => $adminAlumniPusatRole->id,
+        'id_akses_type' => null,
+        'id_akses' => null,
+      ]);
+    }
   }
 }

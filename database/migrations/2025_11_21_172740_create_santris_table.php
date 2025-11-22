@@ -9,8 +9,8 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('santris', function (Blueprint $table) {
-      $table->uuid('id')->primary(); // UUID sebagai primary key
-      $table->foreignId('user_id')->constrained()->onDelete('cascade'); // relasi ke user
+      $table->uuid('id')->primary();
+      $table->foreignId('user_id')->constrained()->onDelete('cascade');
       $table->string('nama_panggilan');
       $table->string('tempat_lahir');
       $table->date('tanggal_lahir');
