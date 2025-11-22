@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\language\LanguageController;
+use App\Http\Controllers\Publik\HomeController;
+
 use App\Http\Controllers\User\UserBaru\DashboardUserBaruController;
 use App\Http\Controllers\User\SuperAdmin\DashboardSuperAdminController;
 use App\Http\Controllers\User\DewanKiai\DashboardDewanKiaiController;
@@ -23,6 +25,8 @@ use App\Http\Controllers\User\WaliSantri\DashboardWaliSantriController;
 use App\Http\Controllers\User\Alumni\DashboardAlumniController;
 
 Route::get('/lang/{locale}', [LanguageController::class, 'swap']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
   Route::get('/user-baru-dashboard', [DashboardUserBaruController::class, 'index'])->name('user-baru-dashboard');
   Route::get('/super-admin-dashboard', [DashboardSuperAdminController::class, 'index'])->name('super-admin-dashboard');
