@@ -1,37 +1,118 @@
 {
   "menu": [
     {
-      "url": "/",
-      "name": "Home",
-      "icon": "menu-icon icon-base ti tabler-smart-home",
-      "slug": "pages-home"
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard User Baru",
+      "slug": "user-baru-dashboard",
+      "url": "/user-baru-dashboard"
     },
     {
-      "url": "/page-2",
-      "icon": "menu-icon icon-base ti tabler-file",
-      "name": "Page 2",
-      "slug": "pages-page-2"
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Super Admin",
+      "slug": "super-admin-dashboard",
+      "url": "/super-admin-dashboard"
     },
     {
-      "url": "/pages/misc-error",
-      "name": "Error",
-      "icon": "menu-icon icon-base ti tabler-alert-triangle",
-      "slug": "pages-misc-error",
-      "target": "_blank"
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Dewan Kiai",
+      "slug": "dewan-kiai-dashboard",
+      "url": "/dewan-kiai-dashboard"
     },
     {
-      "url": "/auth/login-basic",
-      "name": "Login",
-      "icon": "menu-icon icon-base ti tabler-login",
-      "slug": "auth-login-basic",
-      "target": "_blank"
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Santri",
+      "slug": "admin-santri-dashboard",
+      "url": "/admin-santri-dashboard"
     },
     {
-      "url": "/auth/register-basic",
-      "name": "Register",
-      "icon": "menu-icon icon-base ti tabler-user",
-      "slug": "auth-register-basic",
-      "target": "_blank"
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Sekretaris",
+      "slug": "admin-sekretaris-dashboard",
+      "url": "/admin-sekretaris-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Bendahara",
+      "slug": "admin-bendahara-dashboard",
+      "url": "/admin-bendahara-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Keamanan",
+      "slug": "admin-keamanan-dashboard",
+      "url": "/admin-keamanan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Pendidikan",
+      "slug": "admin-pendidikan-dashboard",
+      "url": "/admin-pendidikan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Kesehatan",
+      "slug": "admin-kesehatan-dashboard",
+      "url": "/admin-kesehatan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Asrama",
+      "slug": "admin-asrama-dashboard",
+      "url": "/admin-asrama-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Kamar",
+      "slug": "admin-kamar-dashboard",
+      "url": "/admin-kamar-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Pusat",
+      "slug": "admin-alumni-pusat-dashboard",
+      "url": "/admin-alumni-pusat-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Wilayah",
+      "slug": "admin-alumni-wilayah-dashboard",
+      "url": "/admin-alumni-wilayah-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Cabang",
+      "slug": "admin-alumni-cabang-dashboard",
+      "url": "/admin-alumni-cabang-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Regional",
+      "slug": "admin-alumni-regional-dashboard",
+      "url": "/admin-alumni-regional-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Daerah",
+      "slug": "admin-alumni-daerah-dashboard",
+      "url": "/admin-alumni-daerah-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Santri",
+      "slug": "santri-dashboard",
+      "url": "/santri-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Wali Santri",
+      "slug": "wali-santri-dashboard",
+      "url": "/wali-santri-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Alumni",
+      "slug": "alumni-dashboard",
+      "url": "/alumni-dashboard"
     }
   ]
 }
