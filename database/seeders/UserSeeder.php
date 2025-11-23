@@ -92,6 +92,14 @@ class UserSeeder extends Seeder
         'id_akses_type' => null,
         'id_akses' => null,
       ]);
+      User::create([
+        'name' => 'Imamul Mutaqin Al Hanif',
+        'email' => 'imamulmutaqinalhanif@gmail.com',
+        'password' => Hash::make('password'),
+        'role_id' => $superAdminRole->id,
+        'id_akses_type' => null,
+        'id_akses' => null,
+      ]);
     }
 
     $dewanKiaiRole = Role::where('name', 'Dewan Kiai')->first();
