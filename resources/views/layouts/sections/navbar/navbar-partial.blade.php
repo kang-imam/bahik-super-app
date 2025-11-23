@@ -80,10 +80,16 @@
                   @if (Auth::check())
                     {{ Auth::user()->name }}
                   @else
-                    John Doe
+                    Nama User
                   @endif
                 </h6>
-                <small class="text-body-secondary">Admin</small>
+                <small class="text-body-secondary">
+                  @if (Auth::check())
+                    {{ Auth::user()->role->name }}
+                  @else
+                    Role User
+                  @endif
+                </small>
               </div>
             </div>
           </a>
