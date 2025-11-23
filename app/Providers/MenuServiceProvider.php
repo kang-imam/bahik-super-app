@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class MenuServiceProvider extends ServiceProvider
@@ -11,38 +12,32 @@ class MenuServiceProvider extends ServiceProvider
   {
     //
   }
-
   public function boot(): void
   {
-    // Ambil user login
-    $user = Auth::user();
-
-    // Default role
-    $roleName = $user?->role?->name ?? 'User Baru';
-
-    // Ubah format nama role agar sesuai nama file
-    // contoh: "Super Admin" -> "super-admin"
-    $roleSlug = str()->slug($roleName);
-
-    // Tentukan path file menu berdasarkan role
-    $verticalMenuPath = base_path("resources/menu/user/{$roleSlug}.json");
-
-    // Jika file tidak ada, fallback ke default menu
-    if (!file_exists($verticalMenuPath)) {
-      $verticalMenuPath = base_path("resources/menu/user/default.json");
+    if ($this->app->runningInConsole()) {
+      return;
     }
-
-    // Load file menu
-    $verticalMenuJson = file_get_contents($verticalMenuPath);
-    $verticalMenuData = json_decode($verticalMenuJson);
-
-    // Horizontal menu (tidak berubah)
-    $horizontalMenuJson = file_get_contents(base_path('resources/menu/horizontalMenu.json'));
-    $horizontalMenuData = json_decode($horizontalMenuJson);
-
-    $this->app->make('view')->share('menuData', [
-      $verticalMenuData,
-      $horizontalMenuData,
-    ]);
+    View::composer('*', function () {
+      if (!Auth::check()) {
+        view()->share('menuData', [
+          [],
+          []
+        ]);
+        return;
+      }
+      $user = Auth::user();
+      $roleName = $user->role->name;
+      $roleSlug = str()->slug($roleName);
+      $verticalMenuPath = base_path("resources/menu/user/{$roleSlug}.json");
+      if (!file_exists($verticalMenuPath)) {
+        $verticalMenuPath = base_path("resources/menu/user/default.json");
+      }
+      $verticalMenuData   = json_decode(@file_get_contents($verticalMenuPath));
+      $horizontalMenuData = json_decode(@file_get_contents(base_path('resources/menu/horizontalMenu.json')));
+      view()->share('menuData', [
+        $verticalMenuData,
+        $horizontalMenuData,
+      ]);
+    });
   }
 }
