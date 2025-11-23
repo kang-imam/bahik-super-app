@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Admin Kamar",
+      "name": "Dashboard",
       "slug": "admin-kamar-dashboard",
       "url": "/admin-kamar-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-door",

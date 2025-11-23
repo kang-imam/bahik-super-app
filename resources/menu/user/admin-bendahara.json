@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Admin Bendahara",
+      "name": "Dashboard",
       "slug": "admin-bendahara-dashboard",
       "url": "/admin-bendahara-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-cash",

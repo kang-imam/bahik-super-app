@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard User Baru",
+      "name": "Dashboard",
       "slug": "user-baru-dashboard",
       "url": "/user-baru-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-home",

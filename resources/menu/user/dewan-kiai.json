@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Dewan Kiai",
+      "name": "Dashboard",
       "slug": "dewan-kiai-dashboard",
       "url": "/dewan-kiai-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-users",

@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Santri",
+      "name": "Dashboard",
       "slug": "santri-dashboard",
       "url": "/santri-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-user",

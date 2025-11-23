@@ -7,6 +7,9 @@
       "url": "/super-admin-dashboard"
     },
     {
+      "menuHeader": "Fitur Utama"
+    },
+    {
       "icon": "menu-icon icon-base ti tabler-settings",
       "name": "Manajemen Sistem",
       "slug": "super-admin-manajemen-sistem",
@@ -77,6 +80,1152 @@
       "name": "Kelola Update",
       "slug": "super-admin-kelola-update",
       "url": "/super-admin-kelola-update"
+    },
+    {
+      "menuHeader": "Modul Dewan Kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Data Santri",
+      "slug": "super-admin-data-santri",
+      "url": "/super-admin-data-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Rekap Kehadiran",
+      "slug": "super-admin-rekap-kehadiran",
+      "url": "/super-admin-rekap-kehadiran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-circle",
+      "name": "Rekap Pelanggaran",
+      "slug": "super-admin-rekap-pelanggaran",
+      "url": "/super-admin-rekap-pelanggaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-award",
+      "name": "Rekap Prestasi",
+      "slug": "super-admin-rekap-prestasi",
+      "url": "/super-admin-rekap-prestasi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Rekap Kesehatan",
+      "slug": "super-admin-rekap-kesehatan",
+      "url": "/super-admin-rekap-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Rekap Keamanan",
+      "slug": "super-admin-rekap-keamanan",
+      "url": "/super-admin-rekap-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Rekap Akademik",
+      "slug": "super-admin-rekap-akademik",
+      "url": "/super-admin-rekap-akademik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Kiai",
+      "slug": "super-admin-agenda-kiai",
+      "url": "/super-admin-agenda-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-message-circle",
+      "name": "Pesan Kiai",
+      "slug": "super-admin-pesan-kiai",
+      "url": "/super-admin-pesan-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-checkbox",
+      "name": "Evaluasi Santri",
+      "slug": "super-admin-evaluasi-santri",
+      "url": "/super-admin-evaluasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-flag",
+      "name": "Keputusan Kiai",
+      "slug": "super-admin-keputusan-kiai",
+      "url": "/super-admin-keputusan-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Laporan Pesantren",
+      "slug": "super-admin-laporan-pesantren",
+      "url": "/super-admin-laporan-pesantren"
+    },
+    {
+      "menuHeader": "Modul Admin Santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Data Santri",
+      "slug": "super-admin-data-santri",
+      "url": "/super-admin-data-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-plus",
+      "name": "Registrasi Santri",
+      "slug": "super-admin-registrasi-santri",
+      "url": "/super-admin-registrasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-transfer",
+      "name": "Mutasi Santri",
+      "slug": "super-admin-mutasi-santri",
+      "url": "/super-admin-mutasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Santri",
+      "slug": "super-admin-arsip-santri",
+      "url": "/super-admin-arsip-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-id",
+      "name": "Kartu Santri",
+      "slug": "super-admin-kartu-santri",
+      "url": "/super-admin-kartu-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-history",
+      "name": "Riwayat Santri",
+      "slug": "super-admin-riwayat-santri",
+      "url": "/super-admin-riwayat-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Status Santri",
+      "slug": "super-admin-status-santri",
+      "url": "/super-admin-status-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users-group",
+      "name": "Kelola Wali",
+      "slug": "super-admin-kelola-wali",
+      "url": "/super-admin-kelola-wali"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Laporan Santri",
+      "slug": "super-admin-laporan-santri",
+      "url": "/super-admin-laporan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-check",
+      "name": "Verifikasi Dokumen",
+      "slug": "super-admin-verifikasi-dokumen",
+      "url": "/super-admin-verifikasi-dokumen"
+    },
+    {
+      "menuHeader": "Modul Admin Sekretaris"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail",
+      "name": "Surat Masuk",
+      "slug": "super-admin-surat-masuk",
+      "url": "/super-admin-surat-masuk"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail-forward",
+      "name": "Surat Keluar",
+      "slug": "super-admin-surat-keluar",
+      "url": "/super-admin-surat-keluar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Surat",
+      "slug": "super-admin-arsip-surat",
+      "url": "/super-admin-arsip-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Agenda Surat",
+      "slug": "super-admin-agenda-surat",
+      "url": "/super-admin-agenda-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-share",
+      "name": "Disposisi Surat",
+      "slug": "super-admin-disposisi-surat",
+      "url": "/super-admin-disposisi-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "name": "Notulen Rapat",
+      "slug": "super-admin-notulen-rapat",
+      "url": "/super-admin-notulen-rapat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Rapat",
+      "slug": "super-admin-agenda-rapat",
+      "url": "/super-admin-agenda-rapat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Sekretaris",
+      "slug": "super-admin-laporan-sekretaris",
+      "url": "/super-admin-laporan-sekretaris"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Pesantren",
+      "slug": "super-admin-dokumen-pesantren",
+      "url": "/super-admin-dokumen-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder-open",
+      "name": "Inventaris Arsip",
+      "slug": "super-admin-inventaris-arsip",
+      "url": "/super-admin-inventaris-arsip"
+    },
+    {
+      "menuHeader": "Modul Admin Bendahara"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-cash",
+      "name": "Kas Pesantren",
+      "slug": "super-admin-kas-pesantren",
+      "url": "/super-admin-kas-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-building",
+      "name": "Kas Asrama",
+      "slug": "super-admin-kas-asrama",
+      "url": "/super-admin-kas-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-credit-card",
+      "name": "Pembayaran Santri",
+      "slug": "super-admin-pembayaran-santri",
+      "url": "/super-admin-pembayaran-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-receipt",
+      "name": "Tagihan Santri",
+      "slug": "super-admin-tagihan-santri",
+      "url": "/super-admin-tagihan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-history",
+      "name": "Riwayat Pembayaran",
+      "slug": "super-admin-riwayat-pembayaran",
+      "url": "/super-admin-riwayat-pembayaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-money",
+      "name": "Laporan Keuangan",
+      "slug": "super-admin-laporan-keuangan",
+      "url": "/super-admin-laporan-keuangan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-dollar",
+      "name": "Anggaran Tahunan",
+      "slug": "super-admin-anggaran-tahunan",
+      "url": "/super-admin-anggaran-tahunan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-dollar",
+      "name": "Catatan Transaksi",
+      "slug": "super-admin-catatan-transaksi",
+      "url": "/super-admin-catatan-transaksi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Donasi Pesantren",
+      "slug": "super-admin-donasi-pesantren",
+      "url": "/super-admin-donasi-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Rekap Keuangan",
+      "slug": "super-admin-rekap-keuangan",
+      "url": "/super-admin-rekap-keuangan"
+    },
+    {
+      "menuHeader": "Modul Admin Keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Data Keamanan",
+      "slug": "super-admin-data-keamanan",
+      "url": "/super-admin-data-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-triangle",
+      "name": "Laporan Pelanggaran",
+      "slug": "super-admin-laporan-pelanggaran",
+      "url": "/super-admin-laporan-pelanggaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-time",
+      "name": "Jadwal Patroli",
+      "slug": "super-admin-jadwal-patroli",
+      "url": "/super-admin-jadwal-patroli"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Buku Tamu",
+      "slug": "super-admin-buku-tamu",
+      "url": "/super-admin-buku-tamu"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-door-exit",
+      "name": "Izin Keluar",
+      "slug": "super-admin-izin-keluar",
+      "url": "/super-admin-izin-keluar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-door-enter",
+      "name": "Izin Masuk",
+      "slug": "super-admin-izin-masuk",
+      "url": "/super-admin-izin-masuk"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-camera",
+      "name": "Kamera Keamanan",
+      "slug": "super-admin-kamera-keamanan",
+      "url": "/super-admin-kamera-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-eye",
+      "name": "Catatan Pengawasan",
+      "slug": "super-admin-catatan-pengawasan",
+      "url": "/super-admin-catatan-pengawasan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield-check",
+      "name": "Status Keamanan",
+      "slug": "super-admin-status-keamanan",
+      "url": "/super-admin-status-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Rekap Keamanan",
+      "slug": "super-admin-rekap-keamanan",
+      "url": "/super-admin-rekap-keamanan"
+    },
+    {
+      "menuHeader": "Modul Admin Pendidikan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Data Pelajaran",
+      "slug": "super-admin-data-pelajaran",
+      "url": "/super-admin-data-pelajaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Pelajaran",
+      "slug": "super-admin-jadwal-pelajaran",
+      "url": "/super-admin-jadwal-pelajaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Jadwal Ujian",
+      "slug": "super-admin-jadwal-ujian",
+      "url": "/super-admin-jadwal-ujian"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Santri",
+      "slug": "super-admin-nilai-santri",
+      "url": "/super-admin-nilai-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Rekap Akademik",
+      "slug": "super-admin-rekap-akademik",
+      "url": "/super-admin-rekap-akademik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Kelas",
+      "slug": "super-admin-absensi-kelas",
+      "url": "/super-admin-absensi-kelas"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Rekap Absensi",
+      "slug": "super-admin-rekap-absensi",
+      "url": "/super-admin-rekap-absensi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "name": "Bahan Ajar",
+      "slug": "super-admin-bahan-ajar",
+      "url": "/super-admin-bahan-ajar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Pendidikan",
+      "slug": "super-admin-laporan-pendidikan",
+      "url": "/super-admin-laporan-pendidikan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-checklist",
+      "name": "Evaluasi Akademik",
+      "slug": "super-admin-evaluasi-akademik",
+      "url": "/super-admin-evaluasi-akademik"
+    },
+    {
+      "menuHeader": "Modul Admin Kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Data Kesehatan",
+      "slug": "super-admin-data-kesehatan",
+      "url": "/super-admin-data-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Rekam Medis",
+      "slug": "super-admin-rekam-medis",
+      "url": "/super-admin-rekam-medis"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-pill",
+      "name": "Obat Pesantren",
+      "slug": "super-admin-obat-pesantren",
+      "url": "/super-admin-obat-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-box",
+      "name": "Stok Obat",
+      "slug": "super-admin-stok-obat",
+      "url": "/super-admin-stok-obat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-medical-cross",
+      "name": "Layanan Kesehatan",
+      "slug": "super-admin-layanan-kesehatan",
+      "url": "/super-admin-layanan-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-stethoscope",
+      "name": "Pemeriksaan Santri",
+      "slug": "super-admin-pemeriksaan-santri",
+      "url": "/super-admin-pemeriksaan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Kesehatan",
+      "slug": "super-admin-laporan-kesehatan",
+      "url": "/super-admin-laporan-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-ambulance",
+      "name": "Rujukan Medis",
+      "slug": "super-admin-rujukan-medis",
+      "url": "/super-admin-rujukan-medis"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-notes",
+      "name": "Catatan Klinik",
+      "slug": "super-admin-catatan-klinik",
+      "url": "/super-admin-catatan-klinik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-time",
+      "name": "Jadwal Klinik",
+      "slug": "super-admin-jadwal-klinik",
+      "url": "/super-admin-jadwal-klinik"
+    },
+    {
+      "menuHeader": "Modul Admin Asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-building-community",
+      "name": "Data Asrama",
+      "slug": "super-admin-data-asrama",
+      "url": "/super-admin-data-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-settings",
+      "name": "Atur Asrama",
+      "slug": "super-admin-atur-asrama",
+      "url": "/super-admin-atur-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Asrama",
+      "slug": "super-admin-jadwal-asrama",
+      "url": "/super-admin-jadwal-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Asrama",
+      "slug": "super-admin-kegiatan-asrama",
+      "url": "/super-admin-kegiatan-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Inventaris Asrama",
+      "slug": "super-admin-inventaris-asrama",
+      "url": "/super-admin-inventaris-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users-group",
+      "name": "Pengurus Asrama",
+      "slug": "super-admin-pengurus-asrama",
+      "url": "/super-admin-pengurus-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Asrama",
+      "slug": "super-admin-laporan-asrama",
+      "url": "/super-admin-laporan-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user",
+      "name": "Penghuni Asrama",
+      "slug": "super-admin-penghuni-asrama",
+      "url": "/super-admin-penghuni-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "name": "Kebijakan Asrama",
+      "slug": "super-admin-kebijakan-asrama",
+      "url": "/super-admin-kebijakan-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield-check",
+      "name": "Status Asrama",
+      "slug": "super-admin-status-asrama",
+      "url": "/super-admin-status-asrama"
+    },
+    {
+      "menuHeader": "Modul Admin Kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-door",
+      "name": "Data Kamar",
+      "slug": "super-admin-data-kamar",
+      "url": "/super-admin-data-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-settings",
+      "name": "Atur Kamar",
+      "slug": "super-admin-atur-kamar",
+      "url": "/super-admin-atur-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Penempatan Santri",
+      "slug": "super-admin-penempatan-santri",
+      "url": "/super-admin-penempatan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-transfer",
+      "name": "Perpindahan Kamar",
+      "slug": "super-admin-perpindahan-kamar",
+      "url": "/super-admin-perpindahan-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Inventaris Kamar",
+      "slug": "super-admin-inventaris-kamar",
+      "url": "/super-admin-inventaris-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-trash",
+      "name": "Kebersihan Kamar",
+      "slug": "super-admin-kebersihan-kamar",
+      "url": "/super-admin-kebersihan-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Kamar",
+      "slug": "super-admin-laporan-kamar",
+      "url": "/super-admin-laporan-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Kamar",
+      "slug": "super-admin-jadwal-kamar",
+      "url": "/super-admin-jadwal-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield-check",
+      "name": "Status Hunian",
+      "slug": "super-admin-status-hunian",
+      "url": "/super-admin-status-hunian"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users-group",
+      "name": "Pengurus Kamar",
+      "slug": "super-admin-pengurus-kamar",
+      "url": "/super-admin-pengurus-kamar"
+    },
+    {
+      "menuHeader": "Modul Admin Alumni Pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Data Alumni",
+      "slug": "super-admin-data-alumni",
+      "url": "/super-admin-data-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-plus",
+      "name": "Registrasi Alumni",
+      "slug": "super-admin-registrasi-alumni",
+      "url": "/super-admin-registrasi-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Alumni",
+      "slug": "super-admin-validasi-alumni",
+      "url": "/super-admin-validasi-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Pusat",
+      "slug": "super-admin-struktur-pusat",
+      "url": "/super-admin-struktur-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Pusat",
+      "slug": "super-admin-program-pusat",
+      "url": "/super-admin-program-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Pusat",
+      "slug": "super-admin-agenda-pusat",
+      "url": "/super-admin-agenda-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Pusat",
+      "slug": "super-admin-kegiatan-pusat",
+      "url": "/super-admin-kegiatan-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Pusat",
+      "slug": "super-admin-laporan-pusat",
+      "url": "/super-admin-laporan-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Alumni",
+      "slug": "super-admin-berita-alumni",
+      "url": "/super-admin-berita-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Alumni",
+      "slug": "super-admin-arsip-alumni",
+      "url": "/super-admin-arsip-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-bell",
+      "name": "Notifikasi Pusat",
+      "slug": "super-admin-notifikasi-pusat",
+      "url": "/super-admin-notifikasi-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Pusat",
+      "slug": "super-admin-dokumen-pusat",
+      "url": "/super-admin-dokumen-pusat"
+    },
+    {
+      "menuHeader": "Modul Admin Alumni Wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-map",
+      "name": "Data Wilayah",
+      "slug": "super-admin-data-wilayah",
+      "url": "/super-admin-data-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Wilayah",
+      "slug": "super-admin-validasi-wilayah",
+      "url": "/super-admin-validasi-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Wilayah",
+      "slug": "super-admin-struktur-wilayah",
+      "url": "/super-admin-struktur-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Wilayah",
+      "slug": "super-admin-program-wilayah",
+      "url": "/super-admin-program-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Wilayah",
+      "slug": "super-admin-agenda-wilayah",
+      "url": "/super-admin-agenda-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Wilayah",
+      "slug": "super-admin-kegiatan-wilayah",
+      "url": "/super-admin-kegiatan-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Wilayah",
+      "slug": "super-admin-laporan-wilayah",
+      "url": "/super-admin-laporan-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Wilayah",
+      "slug": "super-admin-berita-wilayah",
+      "url": "/super-admin-berita-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Wilayah",
+      "slug": "super-admin-arsip-wilayah",
+      "url": "/super-admin-arsip-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Wilayah",
+      "slug": "super-admin-dokumen-wilayah",
+      "url": "/super-admin-dokumen-wilayah"
+    },
+    {
+      "menuHeader": "Modul Admin Alumni Cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-building",
+      "name": "Data Cabang",
+      "slug": "super-admin-data-cabang",
+      "url": "/super-admin-data-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Cabang",
+      "slug": "super-admin-validasi-cabang",
+      "url": "/super-admin-validasi-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Cabang",
+      "slug": "super-admin-struktur-cabang",
+      "url": "/super-admin-struktur-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Cabang",
+      "slug": "super-admin-program-cabang",
+      "url": "/super-admin-program-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Cabang",
+      "slug": "super-admin-agenda-cabang",
+      "url": "/super-admin-agenda-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Cabang",
+      "slug": "super-admin-kegiatan-cabang",
+      "url": "/super-admin-kegiatan-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Cabang",
+      "slug": "super-admin-laporan-cabang",
+      "url": "/super-admin-laporan-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Cabang",
+      "slug": "super-admin-berita-cabang",
+      "url": "/super-admin-berita-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Cabang",
+      "slug": "super-admin-arsip-cabang",
+      "url": "/super-admin-arsip-cabang"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Cabang",
+      "slug": "super-admin-dokumen-cabang",
+      "url": "/super-admin-dokumen-cabang"
+    },
+    {
+      "menuHeader": "Modul Admin Alumni Regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-globe",
+      "name": "Data Regional",
+      "slug": "super-admin-data-regional",
+      "url": "/super-admin-data-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Regional",
+      "slug": "super-admin-validasi-regional",
+      "url": "/super-admin-validasi-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Regional",
+      "slug": "super-admin-struktur-regional",
+      "url": "/super-admin-struktur-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Regional",
+      "slug": "super-admin-program-regional",
+      "url": "/super-admin-program-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Regional",
+      "slug": "super-admin-agenda-regional",
+      "url": "/super-admin-agenda-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Regional",
+      "slug": "super-admin-kegiatan-regional",
+      "url": "/super-admin-kegiatan-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Regional",
+      "slug": "super-admin-laporan-regional",
+      "url": "/super-admin-laporan-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Regional",
+      "slug": "super-admin-berita-regional",
+      "url": "/super-admin-berita-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Regional",
+      "slug": "super-admin-arsip-regional",
+      "url": "/super-admin-arsip-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Regional",
+      "slug": "super-admin-dokumen-regional",
+      "url": "/super-admin-dokumen-regional"
+    },
+    {
+      "menuHeader": "Modul Admin Alumni Daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-map",
+      "name": "Data Daerah",
+      "slug": "super-admin-data-daerah",
+      "url": "/super-admin-data-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Daerah",
+      "slug": "super-admin-validasi-daerah",
+      "url": "/super-admin-validasi-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Daerah",
+      "slug": "super-admin-struktur-daerah",
+      "url": "/super-admin-struktur-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Daerah",
+      "slug": "super-admin-program-daerah",
+      "url": "/super-admin-program-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Daerah",
+      "slug": "super-admin-agenda-daerah",
+      "url": "/super-admin-agenda-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Daerah",
+      "slug": "super-admin-kegiatan-daerah",
+      "url": "/super-admin-kegiatan-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Daerah",
+      "slug": "super-admin-laporan-daerah",
+      "url": "/super-admin-laporan-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Daerah",
+      "slug": "super-admin-berita-daerah",
+      "url": "/super-admin-berita-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Daerah",
+      "slug": "super-admin-arsip-daerah",
+      "url": "/super-admin-arsip-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Daerah",
+      "slug": "super-admin-dokumen-daerah",
+      "url": "/super-admin-dokumen-daerah"
+    },
+    {
+      "menuHeader": "Modul Santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user",
+      "name": "Profil Santri",
+      "slug": "santri-profil-santri",
+      "url": "/santri-profil-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Santri",
+      "slug": "santri-jadwal-santri",
+      "url": "/santri-jadwal-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Santri",
+      "slug": "santri-nilai-santri",
+      "url": "/santri-nilai-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Santri",
+      "slug": "santri-absensi-santri",
+      "url": "/santri-absensi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-triangle",
+      "name": "Pelanggaran Santri",
+      "slug": "santri-pelanggaran-santri",
+      "url": "/santri-pelanggaran-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-award",
+      "name": "Prestasi Santri",
+      "slug": "santri-prestasi-santri",
+      "url": "/santri-prestasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Kesehatan Santri",
+      "slug": "santri-kesehatan-santri",
+      "url": "/santri-kesehatan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Keamanan Santri",
+      "slug": "santri-keamanan-santri",
+      "url": "/santri-keamanan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-wallet",
+      "name": "Keuangan Santri",
+      "slug": "santri-keuangan-santri",
+      "url": "/santri-keuangan-santri"
+    },
+    {
+      "menuHeader": "Modul Wali Santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user",
+      "name": "Profil Anak",
+      "slug": "wali-santri-profil-anak",
+      "url": "/wali-santri-profil-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Laporan Anak",
+      "slug": "wali-santri-laporan-anak",
+      "url": "/wali-santri-laporan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Anak",
+      "slug": "wali-santri-nilai-anak",
+      "url": "/wali-santri-nilai-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Anak",
+      "slug": "wali-santri-absensi-anak",
+      "url": "/wali-santri-absensi-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-wallet",
+      "name": "Keuangan Anak",
+      "slug": "wali-santri-keuangan-anak",
+      "url": "/wali-santri-keuangan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Kesehatan Anak",
+      "slug": "wali-santri-kesehatan-anak",
+      "url": "/wali-santri-kesehatan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Keamanan Anak",
+      "slug": "wali-santri-keamanan-anak",
+      "url": "/wali-santri-keamanan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-history",
+      "name": "Riwayat Anak",
+      "slug": "wali-santri-riwayat-anak",
+      "url": "/wali-santri-riwayat-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail",
+      "name": "Pesan Wali",
+      "slug": "wali-santri-pesan-wali",
+      "url": "/wali-santri-pesan-wali"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-home",
+      "name": "Informasi Pesantren",
+      "slug": "wali-santri-informasi-pesantren",
+      "url": "/wali-santri-informasi-pesantren"
+    },
+    {
+      "menuHeader": "Modul Alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Jejaring Alumni",
+      "slug": "alumni-jejaring-alumni",
+      "url": "/alumni-jejaring-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Donasi Sosial",
+      "slug": "alumni-donasi-sosial",
+      "url": "/alumni-donasi-sosial"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-chalkboard",
+      "name": "Mentoring Santri",
+      "slug": "alumni-mentoring-santri",
+      "url": "/alumni-mentoring-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Alumni",
+      "slug": "alumni-kegiatan-alumni",
+      "url": "/alumni-kegiatan-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-flag",
+      "name": "Dakwah Alumni",
+      "slug": "alumni-dakwah-alumni",
+      "url": "/alumni-dakwah-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-refresh",
+      "name": "Update Data",
+      "slug": "alumni-update-data",
+      "url": "/alumni-update-data"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-message",
+      "name": "Komunikasi Alumni",
+      "slug": "alumni-komunikasi-alumni",
+      "url": "/alumni-komunikasi-alumni"
+    },
+    {
+      "menuHeader": "Modul User Baru"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-home",
+      "name": "Profil Pesantren",
+      "slug": "user-baru-profil-pesantren",
+      "url": "/user-baru-profil-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Struktur Organisasi",
+      "slug": "user-baru-struktur-organisasi",
+      "url": "/user-baru-struktur-organisasi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard",
+      "name": "Program Pesantren",
+      "slug": "user-baru-program-pesantren",
+      "url": "/user-baru-program-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Kegiatan",
+      "slug": "user-baru-jadwal-kegiatan",
+      "url": "/user-baru-jadwal-kegiatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Pesantren",
+      "slug": "user-baru-berita-pesantren",
+      "url": "/user-baru-berita-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-phone",
+      "name": "Kontak Pesantren",
+      "slug": "user-baru-kontak-pesantren",
+      "url": "/user-baru-kontak-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-pencil",
+      "name": "Pendaftaran Santri",
+      "slug": "user-baru-pendaftaran-santri",
+      "url": "/user-baru-pendaftaran-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-home",
+      "name": "Informasi Asrama",
+      "slug": "user-baru-informasi-asrama",
+      "url": "/user-baru-informasi-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-bed",
+      "name": "Informasi Kamar",
+      "slug": "user-baru-informasi-kamar",
+      "url": "/user-baru-informasi-kamar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-lock",
+      "name": "Informasi Keamanan",
+      "slug": "user-baru-informasi-keamanan",
+      "url": "/user-baru-informasi-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Informasi Kesehatan",
+      "slug": "user-baru-informasi-kesehatan",
+      "url": "/user-baru-informasi-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Informasi Pendidikan",
+      "slug": "user-baru-informasi-pendidikan",
+      "url": "/user-baru-informasi-pendidikan"
     }
   ]
 }

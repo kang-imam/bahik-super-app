@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Admin Alumni Regional",
+      "name": "Dashboard",
       "slug": "admin-alumni-regional-dashboard",
       "url": "/admin-alumni-regional-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-globe",

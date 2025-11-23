@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Admin Kesehatan",
+      "name": "Dashboard",
       "slug": "admin-kesehatan-dashboard",
       "url": "/admin-kesehatan-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-heart",

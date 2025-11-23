@@ -2,9 +2,12 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Admin Alumni Cabang",
+      "name": "Dashboard",
       "slug": "admin-alumni-cabang-dashboard",
       "url": "/admin-alumni-cabang-dashboard"
+    },
+    {
+      "menuHeader": "Fitur Utama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-building",
