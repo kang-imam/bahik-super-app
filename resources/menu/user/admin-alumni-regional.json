@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Regional",
+      "slug": "admin-alumni-regional-dashboard",
+      "url": "/admin-alumni-regional-dashboard"
+    }
+  ]
+}

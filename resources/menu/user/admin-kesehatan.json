@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Kesehatan",
+      "slug": "admin-kesehatan-dashboard",
+      "url": "/admin-kesehatan-dashboard"
+    }
+  ]
+}

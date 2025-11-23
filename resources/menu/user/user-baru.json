@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard User Baru",
+      "slug": "user-baru-dashboard",
+      "url": "/user-baru-dashboard"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Admin Alumni Wilayah",
+      "slug": "admin-alumni-wilayah-dashboard",
+      "url": "/admin-alumni-wilayah-dashboard"
+    }
+  ]
+}

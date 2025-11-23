@@ -1,0 +1,10 @@
+{
+  "menu": [
+    {
+      "icon": "menu-icon icon-base ti tabler-layout-dashboard",
+      "name": "Dashboard Dewan Kiai",
+      "slug": "dewan-kiai-dashboard",
+      "url": "/dewan-kiai-dashboard"
+    }
+  ]
+}
