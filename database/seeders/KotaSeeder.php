@@ -17,19 +17,46 @@ class KotaSeeder extends Seeder
     $faker = Faker::create();
     $role = Role::where('name', 'Admin Alumni Cabang')->first();
     $provinsis = Provinsi::all();
+
+    // Daftar nama asli orang Indonesia
+    $namaOrangIndonesia = [
+      'Ahmad Fauzi',
+      'Siti Nurhaliza',
+      'Budi Santoso',
+      'Dewi Lestari',
+      'Rizky Maulana',
+      'Indah Permata',
+      'Agus Salim',
+      'Fitriani',
+      'Hendra Wijaya',
+      'Nadia Rahma',
+      'Arief Setiawan',
+      'Maya Sari',
+      'Fajar Pratama',
+      'Citra Dewi',
+      'Bayu Adi',
+      'Rina Handayani'
+    ];
+
+    $no = 1;
     foreach ($provinsis as $provinsi) {
       $kota = Kota::create([
         'nama' => $faker->city,
         'provinsi_id' => $provinsi->id,
       ]);
+
+      // Ambil nama random dari array
+      $randomName = $namaOrangIndonesia[array_rand($namaOrangIndonesia)];
+
       User::create([
-        'name' => "Admin Alumni {$kota->nama}",
-        'email' => $faker->unique()->safeEmail,
-        'password' => Hash::make('password123'),
+        'name' => $randomName,
+        'email' => "admincabang{$no}@bahik.ponpes.id",
+        'password' => Hash::make('password'),
         'role_id' => $role->id,
         'id_akses_type' => Kota::class,
         'id_akses' => $kota->id,
       ]);
+      $no++;
     }
   }
 }

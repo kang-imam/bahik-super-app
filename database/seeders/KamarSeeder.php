@@ -15,6 +15,28 @@ class KamarSeeder extends Seeder
   {
     $asramas = Asrama::all();
     $roleAdminKamar = Role::firstOrCreate(['name' => 'Admin Kamar']);
+
+    // Daftar nama asli orang Indonesia
+    $namaOrangIndonesia = [
+      'Ahmad Fauzi',
+      'Siti Nurhaliza',
+      'Budi Santoso',
+      'Dewi Lestari',
+      'Rizky Maulana',
+      'Indah Permata',
+      'Agus Salim',
+      'Fitriani',
+      'Hendra Wijaya',
+      'Nadia Rahma',
+      'Arief Setiawan',
+      'Maya Sari',
+      'Fajar Pratama',
+      'Citra Dewi',
+      'Bayu Adi',
+      'Rina Handayani'
+    ];
+
+    $no = 1;
     foreach ($asramas as $asrama) {
       for ($k = 1; $k <= 3; $k++) {
         $kamar = Kamar::create([
@@ -22,14 +44,19 @@ class KamarSeeder extends Seeder
           'asrama_id' => $asrama->id,
           'kapasitas' => 4,
         ]);
+
+        // Ambil nama random dari array
+        $randomName = $namaOrangIndonesia[array_rand($namaOrangIndonesia)];
+
         User::create([
-          'name' => "Admin Kamar {$asrama->nama} - {$kamar->nama}",
-          'email' => "adminkamar{$asrama->id}_{$k}@example.com",
+          'name' => $randomName,
+          'email' => "adminkamar{$no}@bahik.ponpes.id",
           'password' => Hash::make('password'),
           'role_id' => $roleAdminKamar->id,
           'id_akses_type' => Kamar::class,
           'id_akses' => $kamar->id,
         ]);
+        $no++;
       }
     }
   }

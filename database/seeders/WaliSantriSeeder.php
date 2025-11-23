@@ -15,26 +15,48 @@ class WaliSantriSeeder extends Seeder
   {
     $roleWaliSantri = Role::firstOrCreate(['name' => 'Wali Santri']);
     $santris = Santri::all();
+
+    // Nama wali laki-laki dan perempuan
+    $namaAyah = ['Ahmad Fauzi', 'Budi Santoso', 'Rizky Pratama', 'Farhan Alfarizi', 'Toni Purnama', 'Syarif Hidayat', 'Bayu Adi', 'Fajar Pratama', 'Arief Setiawan'];
+    $namaIbu = ['Siti Aisyah', 'Dewi Lestari', 'Indah Permatasari', 'Lina Salsabila', 'Maya Sari', 'Citra Dewi', 'Fitriani', 'Rina Handayani', 'Nadia Rahma'];
+
+    $no = 1;
     foreach ($santris as $santri) {
-      $jenisWalis = ['Ayah', 'Ibu'];
-      foreach ($jenisWalis as $jenis) {
-        $user = User::create([
-          'name' => $jenis . ' ' . $santri->nama_panggilan,
-          'email' => strtolower($jenis . '.' . $santri->nama_panggilan) . '@example.com',
-          'password' => Hash::make('password'),
-          'role_id' => $roleWaliSantri->id,
-          'id_akses_type' => WaliSantri::class,
-          'id_akses' => null,
-        ]);
-        $waliSantri = WaliSantri::create([
-          'santri_id' => $santri->id,
-          'user_id' => $user->id,
-          'jenis_wali' => $jenis,
-        ]);
-        $user->update([
-          'id_akses' => $waliSantri->id,
-        ]);
-      }
+      // Ayah
+      $randomAyah = $namaAyah[array_rand($namaAyah)];
+      $userAyah = User::create([
+        'name' => $randomAyah,
+        'email' => "walisantri{$no}@bahik.ponpes.id",
+        'password' => Hash::make('password'),
+        'role_id' => $roleWaliSantri->id,
+        'id_akses_type' => WaliSantri::class,
+        'id_akses' => null,
+      ]);
+      $waliAyah = WaliSantri::create([
+        'santri_id' => $santri->id,
+        'user_id' => $userAyah->id,
+        'jenis_wali' => 'Ayah',
+      ]);
+      $userAyah->update(['id_akses' => $waliAyah->id]);
+      $no++;
+
+      // Ibu
+      $randomIbu = $namaIbu[array_rand($namaIbu)];
+      $userIbu = User::create([
+        'name' => $randomIbu,
+        'email' => "walisantri{$no}@bahik.ponpes.id",
+        'password' => Hash::make('password'),
+        'role_id' => $roleWaliSantri->id,
+        'id_akses_type' => WaliSantri::class,
+        'id_akses' => null,
+      ]);
+      $waliIbu = WaliSantri::create([
+        'santri_id' => $santri->id,
+        'user_id' => $userIbu->id,
+        'jenis_wali' => 'Ibu',
+      ]);
+      $userIbu->update(['id_akses' => $waliIbu->id]);
+      $no++;
     }
   }
 }

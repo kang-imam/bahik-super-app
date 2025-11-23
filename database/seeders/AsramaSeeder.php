@@ -15,20 +15,47 @@ class AsramaSeeder extends Seeder
   {
     $roleAdminAsrama = Role::firstOrCreate(['name' => 'Admin Asrama']);
     $jenisKelamins = JenisKelamin::all();
+
+    // Daftar nama asli orang Indonesia
+    $namaOrangIndonesia = [
+      'Ahmad Fauzi',
+      'Siti Nurhaliza',
+      'Budi Santoso',
+      'Dewi Lestari',
+      'Rizky Maulana',
+      'Indah Permata',
+      'Agus Salim',
+      'Fitriani',
+      'Hendra Wijaya',
+      'Nadia Rahma',
+      'Arief Setiawan',
+      'Maya Sari',
+      'Fajar Pratama',
+      'Citra Dewi',
+      'Bayu Adi',
+      'Rina Handayani'
+    ];
+
+    $no = 1;
     foreach ($jenisKelamins as $jk) {
       for ($i = 1; $i <= 3; $i++) {
         $asrama = Asrama::create([
           'nama' => "{$jk->nama} {$i}",
           'jenis_kelamin_id' => $jk->id,
         ]);
+
+        // Ambil nama random dari array
+        $randomName = $namaOrangIndonesia[array_rand($namaOrangIndonesia)];
+
         User::create([
-          'name' => "Admin {$asrama->nama}",
-          'email' => strtolower("admin{$asrama->id}@asrama.com"),
-          'password' => Hash::make('password123'),
+          'name' => $randomName,
+          'email' => "adminasrama{$no}@bahik.ponpes.id",
+          'password' => Hash::make('password'),
           'role_id' => $roleAdminAsrama->id,
           'id_akses_type' => Asrama::class,
           'id_akses' => $asrama->id,
         ]);
+        $no++;
       }
     }
   }
