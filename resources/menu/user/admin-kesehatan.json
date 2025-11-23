@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Kesehatan",
       "slug": "admin-kesehatan-dashboard",
       "url": "/admin-kesehatan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Data Kesehatan",
+      "slug": "admin-kesehatan-data-kesehatan",
+      "url": "/admin-kesehatan-data-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Rekam Medis",
+      "slug": "admin-kesehatan-rekam-medis",
+      "url": "/admin-kesehatan-rekam-medis"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-pill",
+      "name": "Obat Pesantren",
+      "slug": "admin-kesehatan-obat-pesantren",
+      "url": "/admin-kesehatan-obat-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-box",
+      "name": "Stok Obat",
+      "slug": "admin-kesehatan-stok-obat",
+      "url": "/admin-kesehatan-stok-obat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-medical-cross",
+      "name": "Layanan Kesehatan",
+      "slug": "admin-kesehatan-layanan-kesehatan",
+      "url": "/admin-kesehatan-layanan-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-stethoscope",
+      "name": "Pemeriksaan Santri",
+      "slug": "admin-kesehatan-pemeriksaan-santri",
+      "url": "/admin-kesehatan-pemeriksaan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Kesehatan",
+      "slug": "admin-kesehatan-laporan-kesehatan",
+      "url": "/admin-kesehatan-laporan-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-ambulance",
+      "name": "Rujukan Medis",
+      "slug": "admin-kesehatan-rujukan-medis",
+      "url": "/admin-kesehatan-rujukan-medis"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-notes",
+      "name": "Catatan Klinik",
+      "slug": "admin-kesehatan-catatan-klinik",
+      "url": "/admin-kesehatan-catatan-klinik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-time",
+      "name": "Jadwal Klinik",
+      "slug": "admin-kesehatan-jadwal-klinik",
+      "url": "/admin-kesehatan-jadwal-klinik"
     }
   ]
 }

@@ -5,6 +5,66 @@
       "name": "Dashboard Wali Santri",
       "slug": "wali-santri-dashboard",
       "url": "/wali-santri-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user",
+      "name": "Profil Anak",
+      "slug": "wali-santri-profil-anak",
+      "url": "/wali-santri-profil-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Laporan Anak",
+      "slug": "wali-santri-laporan-anak",
+      "url": "/wali-santri-laporan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Anak",
+      "slug": "wali-santri-nilai-anak",
+      "url": "/wali-santri-nilai-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Anak",
+      "slug": "wali-santri-absensi-anak",
+      "url": "/wali-santri-absensi-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-wallet",
+      "name": "Keuangan Anak",
+      "slug": "wali-santri-keuangan-anak",
+      "url": "/wali-santri-keuangan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Kesehatan Anak",
+      "slug": "wali-santri-kesehatan-anak",
+      "url": "/wali-santri-kesehatan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Keamanan Anak",
+      "slug": "wali-santri-keamanan-anak",
+      "url": "/wali-santri-keamanan-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-history",
+      "name": "Riwayat Anak",
+      "slug": "wali-santri-riwayat-anak",
+      "url": "/wali-santri-riwayat-anak"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail",
+      "name": "Pesan Wali",
+      "slug": "wali-santri-pesan-wali",
+      "url": "/wali-santri-pesan-wali"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-home",
+      "name": "Informasi Pesantren",
+      "slug": "wali-santri-informasi-pesantren",
+      "url": "/wali-santri-informasi-pesantren"
     }
   ]
 }

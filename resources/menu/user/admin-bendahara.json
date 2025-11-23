@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Bendahara",
       "slug": "admin-bendahara-dashboard",
       "url": "/admin-bendahara-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-cash",
+      "name": "Kas Pesantren",
+      "slug": "admin-bendahara-kas-pesantren",
+      "url": "/admin-bendahara-kas-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-building",
+      "name": "Kas Asrama",
+      "slug": "admin-bendahara-kas-asrama",
+      "url": "/admin-bendahara-kas-asrama"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-credit-card",
+      "name": "Pembayaran Santri",
+      "slug": "admin-bendahara-pembayaran-santri",
+      "url": "/admin-bendahara-pembayaran-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-receipt",
+      "name": "Tagihan Santri",
+      "slug": "admin-bendahara-tagihan-santri",
+      "url": "/admin-bendahara-tagihan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-history",
+      "name": "Riwayat Pembayaran",
+      "slug": "admin-bendahara-riwayat-pembayaran",
+      "url": "/admin-bendahara-riwayat-pembayaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-money",
+      "name": "Laporan Keuangan",
+      "slug": "admin-bendahara-laporan-keuangan",
+      "url": "/admin-bendahara-laporan-keuangan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-dollar",
+      "name": "Anggaran Tahunan",
+      "slug": "admin-bendahara-anggaran-tahunan",
+      "url": "/admin-bendahara-anggaran-tahunan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-dollar",
+      "name": "Catatan Transaksi",
+      "slug": "admin-bendahara-catatan-transaksi",
+      "url": "/admin-bendahara-catatan-transaksi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Donasi Pesantren",
+      "slug": "admin-bendahara-donasi-pesantren",
+      "url": "/admin-bendahara-donasi-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Rekap Keuangan",
+      "slug": "admin-bendahara-rekap-keuangan",
+      "url": "/admin-bendahara-rekap-keuangan"
     }
   ]
 }

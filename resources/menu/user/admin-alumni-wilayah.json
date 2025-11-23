@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Alumni Wilayah",
       "slug": "admin-alumni-wilayah-dashboard",
       "url": "/admin-alumni-wilayah-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-map",
+      "name": "Data Wilayah",
+      "slug": "admin-alumni-wilayah-data-wilayah",
+      "url": "/admin-alumni-wilayah-data-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Wilayah",
+      "slug": "admin-alumni-wilayah-validasi-wilayah",
+      "url": "/admin-alumni-wilayah-validasi-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Wilayah",
+      "slug": "admin-alumni-wilayah-struktur-wilayah",
+      "url": "/admin-alumni-wilayah-struktur-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Wilayah",
+      "slug": "admin-alumni-wilayah-program-wilayah",
+      "url": "/admin-alumni-wilayah-program-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Wilayah",
+      "slug": "admin-alumni-wilayah-agenda-wilayah",
+      "url": "/admin-alumni-wilayah-agenda-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Wilayah",
+      "slug": "admin-alumni-wilayah-kegiatan-wilayah",
+      "url": "/admin-alumni-wilayah-kegiatan-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Wilayah",
+      "slug": "admin-alumni-wilayah-laporan-wilayah",
+      "url": "/admin-alumni-wilayah-laporan-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Wilayah",
+      "slug": "admin-alumni-wilayah-berita-wilayah",
+      "url": "/admin-alumni-wilayah-berita-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Wilayah",
+      "slug": "admin-alumni-wilayah-arsip-wilayah",
+      "url": "/admin-alumni-wilayah-arsip-wilayah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Wilayah",
+      "slug": "admin-alumni-wilayah-dokumen-wilayah",
+      "url": "/admin-alumni-wilayah-dokumen-wilayah"
     }
   ]
 }

@@ -48,7 +48,7 @@ class UserSeeder extends Seeder
       $randomPutra = $namaPutra[array_rand($namaPutra)];
       User::create([
         'name' => $randomPutra,
-        'email' => "{$slug}{$counters[$role->name]}@bahik.ponpes.id",
+        'email' => "{$slug}{$counters[$role->name]}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $role->id,
         'id_akses_type' => JenisKelamin::class,
@@ -60,7 +60,7 @@ class UserSeeder extends Seeder
       $randomPutri = $namaPutri[array_rand($namaPutri)];
       User::create([
         'name' => $randomPutri,
-        'email' => "{$slug}{$counters[$role->name]}@bahik.ponpes.id",
+        'email' => "{$slug}{$counters[$role->name]}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $role->id,
         'id_akses_type' => JenisKelamin::class,
@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
     if ($userBaruRole) {
       User::create([
         'name' => 'User Baru',
-        'email' => 'userbaru@bahik.ponpes.id',
+        'email' => 'userbaru@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $userBaruRole->id,
         'id_akses_type' => null,
@@ -86,7 +86,7 @@ class UserSeeder extends Seeder
     if ($superAdminRole) {
       User::create([
         'name' => 'Super Admin',
-        'email' => 'superadmin@bahik.ponpes.id',
+        'email' => 'superadmin@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $superAdminRole->id,
         'id_akses_type' => null,
@@ -106,7 +106,7 @@ class UserSeeder extends Seeder
     if ($dewanKiaiRole) {
       User::create([
         'name' => 'Dewan Kiai',
-        'email' => 'dewankiai@bahik.ponpes.id',
+        'email' => 'dewankiai@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $dewanKiaiRole->id,
         'id_akses_type' => null,
@@ -118,7 +118,7 @@ class UserSeeder extends Seeder
     if ($adminAlumniPusatRole) {
       User::create([
         'name' => 'Admin Alumni Pusat',
-        'email' => 'adminalumnipusat@bahik.ponpes.id',
+        'email' => 'adminpusat@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $adminAlumniPusatRole->id,
         'id_akses_type' => null,

@@ -26,7 +26,7 @@ class WaliSantriSeeder extends Seeder
       $randomAyah = $namaAyah[array_rand($namaAyah)];
       $userAyah = User::create([
         'name' => $randomAyah,
-        'email' => "walisantri{$no}@bahik.ponpes.id",
+        'email' => "walisantri{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $roleWaliSantri->id,
         'id_akses_type' => WaliSantri::class,
@@ -44,7 +44,7 @@ class WaliSantriSeeder extends Seeder
       $randomIbu = $namaIbu[array_rand($namaIbu)];
       $userIbu = User::create([
         'name' => $randomIbu,
-        'email' => "walisantri{$no}@bahik.ponpes.id",
+        'email' => "walisantri{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $roleWaliSantri->id,
         'id_akses_type' => WaliSantri::class,

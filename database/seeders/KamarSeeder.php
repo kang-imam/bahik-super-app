@@ -50,7 +50,7 @@ class KamarSeeder extends Seeder
 
         User::create([
           'name' => $randomName,
-          'email' => "adminkamar{$no}@bahik.ponpes.id",
+          'email' => "adminkamar{$no}@bahik.id",
           'password' => Hash::make('password'),
           'role_id' => $roleAdminKamar->id,
           'id_akses_type' => Kamar::class,

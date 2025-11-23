@@ -48,7 +48,7 @@ class KecamatanSeeder extends Seeder
 
       User::create([
         'name' => $randomName,
-        'email' => "adminregional{$no}@bahik.ponpes.id",
+        'email' => "adminregional{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $roleAdminAlumniRegional->id,
         'id_akses_type' => Kecamatan::class,

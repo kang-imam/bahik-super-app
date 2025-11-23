@@ -2,9 +2,81 @@
   "menu": [
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
-      "name": "Dashboard Super Admin",
+      "name": "Dashboard",
       "slug": "super-admin-dashboard",
       "url": "/super-admin-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-settings",
+      "name": "Manajemen Sistem",
+      "slug": "super-admin-manajemen-sistem",
+      "url": "/super-admin-manajemen-sistem"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Kelola Pengguna",
+      "slug": "super-admin-kelola-pengguna",
+      "url": "/super-admin-kelola-pengguna"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-cog",
+      "name": "Kelola Role",
+      "slug": "super-admin-kelola-role",
+      "url": "/super-admin-kelola-role"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-lock",
+      "name": "Kelola Hak Akses",
+      "slug": "super-admin-kelola-hak-akses",
+      "url": "/super-admin-kelola-hak-akses"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-puzzle",
+      "name": "Kelola Modul",
+      "slug": "super-admin-kelola-modul",
+      "url": "/super-admin-kelola-modul"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-bell-exclamation",
+      "name": "Atur Notifikasi",
+      "slug": "super-admin-atur-notifikasi",
+      "url": "/super-admin-atur-notifikasi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Pantau Aktivitas",
+      "slug": "super-admin-pantau-aktivitas",
+      "url": "/super-admin-pantau-aktivitas"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-search",
+      "name": "Pantau Log Data",
+      "slug": "super-admin-pantau-logdata",
+      "url": "/super-admin-pantau-logdata"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-plug",
+      "name": "Atur Integrasi",
+      "slug": "super-admin-atur-integrasi",
+      "url": "/super-admin-atur-integrasi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-cloud",
+      "name": "Kelola Backup",
+      "slug": "super-admin-kelola-backup",
+      "url": "/super-admin-kelola-backup"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-restore",
+      "name": "Kelola Restore",
+      "slug": "super-admin-kelola-restore",
+      "url": "/super-admin-kelola-restore"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-refresh",
+      "name": "Kelola Update",
+      "slug": "super-admin-kelola-update",
+      "url": "/super-admin-kelola-update"
     }
   ]
 }

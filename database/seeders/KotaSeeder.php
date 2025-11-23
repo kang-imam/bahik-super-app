@@ -50,7 +50,7 @@ class KotaSeeder extends Seeder
 
       User::create([
         'name' => $randomName,
-        'email' => "admincabang{$no}@bahik.ponpes.id",
+        'email' => "admincabang{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $role->id,
         'id_akses_type' => Kota::class,

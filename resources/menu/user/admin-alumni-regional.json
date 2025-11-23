@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Alumni Regional",
       "slug": "admin-alumni-regional-dashboard",
       "url": "/admin-alumni-regional-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-globe",
+      "name": "Data Regional",
+      "slug": "admin-alumni-regional-data-regional",
+      "url": "/admin-alumni-regional-data-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Regional",
+      "slug": "admin-alumni-regional-validasi-regional",
+      "url": "/admin-alumni-regional-validasi-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Regional",
+      "slug": "admin-alumni-regional-struktur-regional",
+      "url": "/admin-alumni-regional-struktur-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Regional",
+      "slug": "admin-alumni-regional-program-regional",
+      "url": "/admin-alumni-regional-program-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Regional",
+      "slug": "admin-alumni-regional-agenda-regional",
+      "url": "/admin-alumni-regional-agenda-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Regional",
+      "slug": "admin-alumni-regional-kegiatan-regional",
+      "url": "/admin-alumni-regional-kegiatan-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Regional",
+      "slug": "admin-alumni-regional-laporan-regional",
+      "url": "/admin-alumni-regional-laporan-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Regional",
+      "slug": "admin-alumni-regional-berita-regional",
+      "url": "/admin-alumni-regional-berita-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Regional",
+      "slug": "admin-alumni-regional-arsip-regional",
+      "url": "/admin-alumni-regional-arsip-regional"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Regional",
+      "slug": "admin-alumni-regional-dokumen-regional",
+      "url": "/admin-alumni-regional-dokumen-regional"
     }
   ]
 }

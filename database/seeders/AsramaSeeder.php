@@ -49,7 +49,7 @@ class AsramaSeeder extends Seeder
 
         User::create([
           'name' => $randomName,
-          'email' => "adminasrama{$no}@bahik.ponpes.id",
+          'email' => "adminasrama{$no}@bahik.id",
           'password' => Hash::make('password'),
           'role_id' => $roleAdminAsrama->id,
           'id_akses_type' => Asrama::class,

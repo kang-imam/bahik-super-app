@@ -5,6 +5,78 @@
       "name": "Dashboard Admin Alumni Pusat",
       "slug": "admin-alumni-pusat-dashboard",
       "url": "/admin-alumni-pusat-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Data Alumni",
+      "slug": "admin-alumni-pusat-data-alumni",
+      "url": "/admin-alumni-pusat-data-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-plus",
+      "name": "Registrasi Alumni",
+      "slug": "admin-alumni-pusat-registrasi-alumni",
+      "url": "/admin-alumni-pusat-registrasi-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Alumni",
+      "slug": "admin-alumni-pusat-validasi-alumni",
+      "url": "/admin-alumni-pusat-validasi-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Pusat",
+      "slug": "admin-alumni-pusat-struktur-pusat",
+      "url": "/admin-alumni-pusat-struktur-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Pusat",
+      "slug": "admin-alumni-pusat-program-pusat",
+      "url": "/admin-alumni-pusat-program-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Pusat",
+      "slug": "admin-alumni-pusat-agenda-pusat",
+      "url": "/admin-alumni-pusat-agenda-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Pusat",
+      "slug": "admin-alumni-pusat-kegiatan-pusat",
+      "url": "/admin-alumni-pusat-kegiatan-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Pusat",
+      "slug": "admin-alumni-pusat-laporan-pusat",
+      "url": "/admin-alumni-pusat-laporan-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Alumni",
+      "slug": "admin-alumni-pusat-berita-alumni",
+      "url": "/admin-alumni-pusat-berita-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Alumni",
+      "slug": "admin-alumni-pusat-arsip-alumni",
+      "url": "/admin-alumni-pusat-arsip-alumni"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-bell",
+      "name": "Notifikasi Pusat",
+      "slug": "admin-alumni-pusat-notifikasi-pusat",
+      "url": "/admin-alumni-pusat-notifikasi-pusat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Pusat",
+      "slug": "admin-alumni-pusat-dokumen-pusat",
+      "url": "/admin-alumni-pusat-dokumen-pusat"
     }
   ]
 }

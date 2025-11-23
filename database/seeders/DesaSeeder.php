@@ -48,7 +48,7 @@ class DesaSeeder extends Seeder
 
       User::create([
         'name' => $randomName,
-        'email' => "admindaerah{$no}@bahik.ponpes.id",
+        'email' => "admindaerah{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $adminRole->id,
         'id_akses_type' => Desa::class,

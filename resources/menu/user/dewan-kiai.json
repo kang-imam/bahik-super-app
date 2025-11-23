@@ -5,6 +5,78 @@
       "name": "Dashboard Dewan Kiai",
       "slug": "dewan-kiai-dashboard",
       "url": "/dewan-kiai-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-users",
+      "name": "Data Santri",
+      "slug": "dewan-kiai-data-santri",
+      "url": "/dewan-kiai-data-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Rekap Kehadiran",
+      "slug": "dewan-kiai-rekap-kehadiran",
+      "url": "/dewan-kiai-rekap-kehadiran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-circle",
+      "name": "Rekap Pelanggaran",
+      "slug": "dewan-kiai-rekap-pelanggaran",
+      "url": "/dewan-kiai-rekap-pelanggaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-award",
+      "name": "Rekap Prestasi",
+      "slug": "dewan-kiai-rekap-prestasi",
+      "url": "/dewan-kiai-rekap-prestasi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Rekap Kesehatan",
+      "slug": "dewan-kiai-rekap-kesehatan",
+      "url": "/dewan-kiai-rekap-kesehatan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Rekap Keamanan",
+      "slug": "dewan-kiai-rekap-keamanan",
+      "url": "/dewan-kiai-rekap-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Rekap Akademik",
+      "slug": "dewan-kiai-rekap-akademik",
+      "url": "/dewan-kiai-rekap-akademik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Kiai",
+      "slug": "dewan-kiai-agenda-kiai",
+      "url": "/dewan-kiai-agenda-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-message-circle",
+      "name": "Pesan Kiai",
+      "slug": "dewan-kiai-pesan-kiai",
+      "url": "/dewan-kiai-pesan-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-checkbox",
+      "name": "Evaluasi Santri",
+      "slug": "dewan-kiai-evaluasi-santri",
+      "url": "/dewan-kiai-evaluasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-flag",
+      "name": "Keputusan Kiai",
+      "slug": "dewan-kiai-keputusan-kiai",
+      "url": "/dewan-kiai-keputusan-kiai"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Laporan Pesantren",
+      "slug": "dewan-kiai-laporan-pesantren",
+      "url": "/dewan-kiai-laporan-pesantren"
     }
   ]
 }

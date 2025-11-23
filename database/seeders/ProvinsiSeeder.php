@@ -86,7 +86,7 @@ class ProvinsiSeeder extends Seeder
 
       User::create([
         'name' => $randomName,
-        'email' => "adminwilayah{$no}@bahik.ponpes.id",
+        'email' => "adminwilayah{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $role->id,
         'id_akses_type' => Provinsi::class,

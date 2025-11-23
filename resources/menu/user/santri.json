@@ -5,6 +5,60 @@
       "name": "Dashboard Santri",
       "slug": "santri-dashboard",
       "url": "/santri-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user",
+      "name": "Profil Santri",
+      "slug": "santri-profil-santri",
+      "url": "/santri-profil-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Santri",
+      "slug": "santri-jadwal-santri",
+      "url": "/santri-jadwal-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Santri",
+      "slug": "santri-nilai-santri",
+      "url": "/santri-nilai-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Santri",
+      "slug": "santri-absensi-santri",
+      "url": "/santri-absensi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-triangle",
+      "name": "Pelanggaran Santri",
+      "slug": "santri-pelanggaran-santri",
+      "url": "/santri-pelanggaran-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-award",
+      "name": "Prestasi Santri",
+      "slug": "santri-prestasi-santri",
+      "url": "/santri-prestasi-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-heart",
+      "name": "Kesehatan Santri",
+      "slug": "santri-kesehatan-santri",
+      "url": "/santri-kesehatan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Keamanan Santri",
+      "slug": "santri-keamanan-santri",
+      "url": "/santri-keamanan-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-wallet",
+      "name": "Keuangan Santri",
+      "slug": "santri-keuangan-santri",
+      "url": "/santri-keuangan-santri"
     }
   ]
 }

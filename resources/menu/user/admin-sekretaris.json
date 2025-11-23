@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Sekretaris",
       "slug": "admin-sekretaris-dashboard",
       "url": "/admin-sekretaris-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail",
+      "name": "Surat Masuk",
+      "slug": "admin-sekretaris-surat-masuk",
+      "url": "/admin-sekretaris-surat-masuk"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-mail-forward",
+      "name": "Surat Keluar",
+      "slug": "admin-sekretaris-surat-keluar",
+      "url": "/admin-sekretaris-surat-keluar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Surat",
+      "slug": "admin-sekretaris-arsip-surat",
+      "url": "/admin-sekretaris-arsip-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Agenda Surat",
+      "slug": "admin-sekretaris-agenda-surat",
+      "url": "/admin-sekretaris-agenda-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-share",
+      "name": "Disposisi Surat",
+      "slug": "admin-sekretaris-disposisi-surat",
+      "url": "/admin-sekretaris-disposisi-surat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "name": "Notulen Rapat",
+      "slug": "admin-sekretaris-notulen-rapat",
+      "url": "/admin-sekretaris-notulen-rapat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Rapat",
+      "slug": "admin-sekretaris-agenda-rapat",
+      "url": "/admin-sekretaris-agenda-rapat"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Sekretaris",
+      "slug": "admin-sekretaris-laporan-sekretaris",
+      "url": "/admin-sekretaris-laporan-sekretaris"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Pesantren",
+      "slug": "admin-sekretaris-dokumen-pesantren",
+      "url": "/admin-sekretaris-dokumen-pesantren"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder-open",
+      "name": "Inventaris Arsip",
+      "slug": "admin-sekretaris-inventaris-arsip",
+      "url": "/admin-sekretaris-inventaris-arsip"
     }
   ]
 }

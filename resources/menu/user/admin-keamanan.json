@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Keamanan",
       "slug": "admin-keamanan-dashboard",
       "url": "/admin-keamanan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield",
+      "name": "Data Keamanan",
+      "slug": "admin-keamanan-data-keamanan",
+      "url": "/admin-keamanan-data-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-alert-triangle",
+      "name": "Laporan Pelanggaran",
+      "slug": "admin-keamanan-laporan-pelanggaran",
+      "url": "/admin-keamanan-laporan-pelanggaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-time",
+      "name": "Jadwal Patroli",
+      "slug": "admin-keamanan-jadwal-patroli",
+      "url": "/admin-keamanan-jadwal-patroli"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Buku Tamu",
+      "slug": "admin-keamanan-buku-tamu",
+      "url": "/admin-keamanan-buku-tamu"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-door-exit",
+      "name": "Izin Keluar",
+      "slug": "admin-keamanan-izin-keluar",
+      "url": "/admin-keamanan-izin-keluar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-door-enter",
+      "name": "Izin Masuk",
+      "slug": "admin-keamanan-izin-masuk",
+      "url": "/admin-keamanan-izin-masuk"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-camera",
+      "name": "Kamera Keamanan",
+      "slug": "admin-keamanan-kamera-keamanan",
+      "url": "/admin-keamanan-kamera-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-eye",
+      "name": "Catatan Pengawasan",
+      "slug": "admin-keamanan-catatan-pengawasan",
+      "url": "/admin-keamanan-catatan-pengawasan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-shield-check",
+      "name": "Status Keamanan",
+      "slug": "admin-keamanan-status-keamanan",
+      "url": "/admin-keamanan-status-keamanan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Rekap Keamanan",
+      "slug": "admin-keamanan-rekap-keamanan",
+      "url": "/admin-keamanan-rekap-keamanan"
     }
   ]
 }

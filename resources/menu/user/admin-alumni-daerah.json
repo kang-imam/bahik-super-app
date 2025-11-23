@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Alumni Daerah",
       "slug": "admin-alumni-daerah-dashboard",
       "url": "/admin-alumni-daerah-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-map",
+      "name": "Data Daerah",
+      "slug": "admin-alumni-daerah-data-daerah",
+      "url": "/admin-alumni-daerah-data-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-user-check",
+      "name": "Validasi Daerah",
+      "slug": "admin-alumni-daerah-validasi-daerah",
+      "url": "/admin-alumni-daerah-validasi-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-sitemap",
+      "name": "Struktur Daerah",
+      "slug": "admin-alumni-daerah-struktur-daerah",
+      "url": "/admin-alumni-daerah-struktur-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Program Daerah",
+      "slug": "admin-alumni-daerah-program-daerah",
+      "url": "/admin-alumni-daerah-program-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Agenda Daerah",
+      "slug": "admin-alumni-daerah-agenda-daerah",
+      "url": "/admin-alumni-daerah-agenda-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-activity",
+      "name": "Kegiatan Daerah",
+      "slug": "admin-alumni-daerah-kegiatan-daerah",
+      "url": "/admin-alumni-daerah-kegiatan-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Daerah",
+      "slug": "admin-alumni-daerah-laporan-daerah",
+      "url": "/admin-alumni-daerah-laporan-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-news",
+      "name": "Berita Daerah",
+      "slug": "admin-alumni-daerah-berita-daerah",
+      "url": "/admin-alumni-daerah-berita-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-archive",
+      "name": "Arsip Daerah",
+      "slug": "admin-alumni-daerah-arsip-daerah",
+      "url": "/admin-alumni-daerah-arsip-daerah"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-folder",
+      "name": "Dokumen Daerah",
+      "slug": "admin-alumni-daerah-dokumen-daerah",
+      "url": "/admin-alumni-daerah-dokumen-daerah"
     }
   ]
 }

@@ -53,7 +53,7 @@ class SantriSeeder extends Seeder
     foreach ($namaPutra as $nama) {
       $user = User::create([
         'name' => $nama,
-        'email' => "santri{$no}@bahik.ponpes.id",
+        'email' => "santri{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $santriRole->id,
         'id_akses_type' => Santri::class,
@@ -73,7 +73,7 @@ class SantriSeeder extends Seeder
     foreach ($namaPutri as $nama) {
       $user = User::create([
         'name' => $nama,
-        'email' => "santri{$no}@bahik.ponpes.id",
+        'email' => "santri{$no}@bahik.id",
         'password' => Hash::make('password'),
         'role_id' => $santriRole->id,
         'id_akses_type' => Santri::class,

@@ -5,6 +5,66 @@
       "name": "Dashboard Admin Pendidikan",
       "slug": "admin-pendidikan-dashboard",
       "url": "/admin-pendidikan-dashboard"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-book",
+      "name": "Data Pelajaran",
+      "slug": "admin-pendidikan-data-pelajaran",
+      "url": "/admin-pendidikan-data-pelajaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar",
+      "name": "Jadwal Pelajaran",
+      "slug": "admin-pendidikan-jadwal-pelajaran",
+      "url": "/admin-pendidikan-jadwal-pelajaran"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-calendar-event",
+      "name": "Jadwal Ujian",
+      "slug": "admin-pendidikan-jadwal-ujian",
+      "url": "/admin-pendidikan-jadwal-ujian"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-star",
+      "name": "Nilai Santri",
+      "slug": "admin-pendidikan-nilai-santri",
+      "url": "/admin-pendidikan-nilai-santri"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report",
+      "name": "Rekap Akademik",
+      "slug": "admin-pendidikan-rekap-akademik",
+      "url": "/admin-pendidikan-rekap-akademik"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-check",
+      "name": "Absensi Kelas",
+      "slug": "admin-pendidikan-absensi-kelas",
+      "url": "/admin-pendidikan-absensi-kelas"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-clipboard-list",
+      "name": "Rekap Absensi",
+      "slug": "admin-pendidikan-rekap-absensi",
+      "url": "/admin-pendidikan-rekap-absensi"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "name": "Bahan Ajar",
+      "slug": "admin-pendidikan-bahan-ajar",
+      "url": "/admin-pendidikan-bahan-ajar"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-report-analytics",
+      "name": "Laporan Pendidikan",
+      "slug": "admin-pendidikan-laporan-pendidikan",
+      "url": "/admin-pendidikan-laporan-pendidikan"
+    },
+    {
+      "icon": "menu-icon icon-base ti tabler-checklist",
+      "name": "Evaluasi Akademik",
+      "slug": "admin-pendidikan-evaluasi-akademik",
+      "url": "/admin-pendidikan-evaluasi-akademik"
     }
   ]
 }
