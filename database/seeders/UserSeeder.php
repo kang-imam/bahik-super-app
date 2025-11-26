@@ -74,7 +74,7 @@ class UserSeeder extends Seeder
     if ($userBaruRole) {
       User::create([
         'name' => 'User Baru',
-        'email' => 'userbaru@bahik.id',
+        'email' => 'userbaru1@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $userBaruRole->id,
         'id_akses_type' => null,
@@ -86,7 +86,7 @@ class UserSeeder extends Seeder
     if ($superAdminRole) {
       User::create([
         'name' => 'Super Admin',
-        'email' => 'superadmin@bahik.id',
+        'email' => 'superadmin1@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $superAdminRole->id,
         'id_akses_type' => null,
@@ -106,7 +106,7 @@ class UserSeeder extends Seeder
     if ($dewanKiaiRole) {
       User::create([
         'name' => 'Dewan Kiai',
-        'email' => 'dewankiai@bahik.id',
+        'email' => 'dewankiai1@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $dewanKiaiRole->id,
         'id_akses_type' => null,
@@ -118,7 +118,7 @@ class UserSeeder extends Seeder
     if ($adminAlumniPusatRole) {
       User::create([
         'name' => 'Admin Alumni Pusat',
-        'email' => 'adminpusat@bahik.id',
+        'email' => 'adminpusat1@bahik.id',
         'password' => Hash::make('password'),
         'role_id' => $adminAlumniPusatRole->id,
         'id_akses_type' => null,
