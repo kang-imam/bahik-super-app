@@ -11,6 +11,7 @@ return new class extends Migration
     Schema::create('roles', function (Blueprint $table) {
       $table->id();
       $table->string('name')->unique();
+      $table->string('slug')->unique();
       $table->timestamps();
     });
     Schema::create('users', function (Blueprint $table) {
@@ -20,10 +21,12 @@ return new class extends Migration
       $table->timestamp('email_verified_at')->nullable();
       $table->string('password');
       $table->rememberToken();
-      $table->foreignId('role_id')->nullable()->constrained('roles')->onDelete('set null');
-      $table->string('id_akses_type')->nullable();
-      $table->unsignedBigInteger('id_akses')->nullable();
-      $table->unsignedBigInteger('current_team_id')->nullable();
+      $table->foreignId('role_id')
+        ->nullable()
+        ->constrained('roles')
+        ->onDelete('set null');
+      $table->nullableMorphs('akses');
+      $table->foreignId('current_team_id')->nullable();
       $table->string('profile_photo_path', 2048)->nullable();
       $table->timestamps();
     });

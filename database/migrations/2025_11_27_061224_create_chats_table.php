@@ -10,21 +10,20 @@ return new class extends Migration
   {
     Schema::create('chats', function (Blueprint $table) {
       $table->id();
-
-      $table->foreignId('pengirim_id')->constrained('users')->onDelete('cascade');
-      // Relasi ke user pengirim
-
-      $table->foreignId('penerima_id')->constrained('users')->onDelete('cascade');
-      // Relasi ke user penerima
-
-      $table->text('pesan'); // Isi pesan
-      $table->timestamp('waktu_kirim')->useCurrent(); // Timestamp pesan dikirim
-      $table->boolean('status_baca')->default(false); // Status baca, default false
-
+      $table->unsignedBigInteger('pengirim_id');
+      $table->unsignedBigInteger('penerima_id');
+      $table->text('pesan');
+      $table->timestamp('waktu_kirim')->useCurrent();
+      $table->boolean('status_baca')->default(false);
       $table->timestamps();
+      $table->foreign('pengirim_id', 'fk_chats_pengirim')
+        ->references('id')->on('users')
+        ->onDelete('cascade');
+      $table->foreign('penerima_id', 'fk_chats_penerima')
+        ->references('id')->on('users')
+        ->onDelete('cascade');
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('chats');

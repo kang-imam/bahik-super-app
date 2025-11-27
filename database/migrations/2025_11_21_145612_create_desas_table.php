@@ -11,7 +11,9 @@ return new class extends Migration
     Schema::create('desas', function (Blueprint $table) {
       $table->id();
       $table->string('nama');
-      $table->foreignId('kecamatan_id')->constrained('kecamatans')->onDelete('cascade');
+      $table->foreignId('kecamatan_id')
+        ->constrained('kecamatans')
+        ->onDelete('cascade');
       $table->softDeletes();
       $table->timestamps();
     });

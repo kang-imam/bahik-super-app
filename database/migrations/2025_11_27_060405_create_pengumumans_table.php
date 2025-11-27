@@ -8,22 +8,18 @@ return new class extends Migration
 {
   public function up(): void
   {
-    Schema::create('pengumumen', function (Blueprint $table) {
+    Schema::create('pengumumans', function (Blueprint $table) {
       $table->id();
-
-      $table->string('judul'); // Judul pengumuman
-      $table->text('isi');     // Isi pengumuman
+      $table->string('judul');
+      $table->text('isi');
       $table->foreignId('dibuat_oleh')->constrained('users')->onDelete('cascade');
-      // Relasi ke tabel users
-      $table->date('tanggal_terbit'); // Tanggal diterbitkan
-      $table->string('lampiran')->nullable(); // File lampiran opsional
-
+      $table->date('tanggal_terbit');
+      $table->string('lampiran')->nullable();
       $table->timestamps();
     });
   }
-
   public function down(): void
   {
-    Schema::dropIfExists('pengumumen');
+    Schema::dropIfExists('pengumumans');
   }
 };

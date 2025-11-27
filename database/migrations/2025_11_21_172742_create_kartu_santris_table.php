@@ -8,23 +8,19 @@ return new class extends Migration
 {
   public function up(): void
   {
-    Schema::create('penempatan_kamars', function (Blueprint $table) {
+    Schema::create('kartu_santris', function (Blueprint $table) {
       $table->id();
       $table->foreignUuid('santri_id')
         ->constrained('santris')
         ->onDelete('cascade');
-      $table->foreignId('kamar_id')
-        ->constrained('kamars')
-        ->onDelete('cascade');
-      $table->date('tanggal_masuk');
-      $table->date('tanggal_keluar')->nullable();
-      $table->enum('status', ['aktif', 'nonaktif'])
-        ->default('aktif');
+      $table->string('uid')->unique();
+      $table->enum('status', ['aktif', 'cadangan', 'nonaktif'])
+        ->default('cadangan');
       $table->timestamps();
     });
   }
   public function down(): void
   {
-    Schema::dropIfExists('penempatan_kamars');
+    Schema::dropIfExists('kartu_santris');
   }
 };

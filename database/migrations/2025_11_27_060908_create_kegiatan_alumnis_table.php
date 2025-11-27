@@ -10,18 +10,14 @@ return new class extends Migration
   {
     Schema::create('kegiatan_alumnis', function (Blueprint $table) {
       $table->id();
-
-      $table->string('nama'); // Nama kegiatan
+      $table->string('nama');
       $table->enum('level_penyelenggara', ['pusat', 'wilayah', 'cabang', 'regional', 'daerah']);
-      // Level penyelenggara
-      $table->date('tanggal'); // Tanggal kegiatan
-      $table->string('lokasi'); // Lokasi kegiatan
-      $table->text('deskripsi')->nullable(); // Deskripsi kegiatan, opsional
-
+      $table->date('tanggal');
+      $table->string('lokasi');
+      $table->text('deskripsi')->nullable();
       $table->timestamps();
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('kegiatan_alumnis');

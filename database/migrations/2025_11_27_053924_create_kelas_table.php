@@ -10,17 +10,11 @@ return new class extends Migration
   {
     Schema::create('kelas', function (Blueprint $table) {
       $table->id();
-
-      // Nama kelas
       $table->string('nama');
-
-      // Wali kelas (relasi ke tabel guru misal, atau bisa string)
       $table->string('wali_kelas')->nullable();
-
       $table->timestamps();
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('kelas');

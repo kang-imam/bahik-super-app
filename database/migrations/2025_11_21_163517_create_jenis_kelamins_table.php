@@ -30,7 +30,7 @@ return new class extends Migration
         'deskripsi' => 'Santri Putri',
         'created_at' => now(),
         'updated_at' => now(),
-      ]
+      ],
     ]);
   }
   public function down(): void

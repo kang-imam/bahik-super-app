@@ -10,20 +10,22 @@ return new class extends Migration
   {
     Schema::create('izin_kesehatans', function (Blueprint $table) {
       $table->id();
-      $table->unsignedBigInteger('santri_id'); // relasi ke tabel santri
-      $table->enum('jenis_izin', ['rawat', 'berobat', 'pulang']); // jenis izin
-      $table->text('alasan'); // alasan izin
-      $table->date('tanggal_mulai'); // tanggal mulai izin
-      $table->date('tanggal_selesai'); // tanggal selesai izin
-      $table->unsignedBigInteger('disetujui_oleh')->nullable(); // relasi ke tabel user yang menyetujui, nullable jika belum disetujui
+      $table->uuid('santri_id');
+      $table->foreign('santri_id')
+        ->references('id')
+        ->on('santris')
+        ->onDelete('cascade');
+      $table->enum('jenis_izin', ['rawat', 'berobat', 'pulang']);
+      $table->text('alasan');
+      $table->date('tanggal_mulai');
+      $table->date('tanggal_selesai');
+      $table->foreignId('disetujui_oleh')
+        ->nullable()
+        ->constrained('users')
+        ->nullOnDelete();
       $table->timestamps();
-
-      // Optional: tambahkan foreign key
-      $table->foreign('santri_id')->references('id')->on('santris')->onDelete('cascade');
-      $table->foreign('disetujui_oleh')->references('id')->on('users')->onDelete('set null');
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('izin_kesehatans');

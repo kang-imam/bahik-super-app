@@ -10,20 +10,21 @@ return new class extends Migration
   {
     Schema::create('sanksis', function (Blueprint $table) {
       $table->id();
-      $table->unsignedBigInteger('pelanggaran_id'); // relasi ke tabel pelanggarans
-      $table->string('jenis_sanksi'); // jenis sanksi
-      $table->string('durasi')->nullable(); // durasi sanksi, bisa berupa string misal "3 hari"
-      $table->text('catatan')->nullable(); // catatan tambahan
-      $table->enum('status_pelaksanaan', ['belum', 'sedang', 'selesai'])->default('belum'); // status pelaksanaan
-      $table->unsignedBigInteger('pelaksana_id')->nullable(); // relasi ke tabel users
+      $table->foreignId('pelanggaran_id')
+        ->constrained('pelanggarans')
+        ->onDelete('cascade');
+      $table->string('jenis_sanksi');
+      $table->string('durasi')->nullable();
+      $table->text('catatan')->nullable();
+      $table->enum('status_pelaksanaan', ['belum', 'sedang', 'selesai'])
+        ->default('belum');
+      $table->foreignId('pelaksana_id')
+        ->nullable()
+        ->constrained('users')
+        ->nullOnDelete();
       $table->timestamps();
-
-      // Optional: foreign key
-      $table->foreign('pelanggaran_id')->references('id')->on('pelanggarans')->onDelete('cascade');
-      $table->foreign('pelaksana_id')->references('id')->on('users')->onDelete('set null');
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('sanksis');

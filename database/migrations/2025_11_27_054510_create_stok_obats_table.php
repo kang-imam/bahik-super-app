@@ -6,24 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-  /**
-   * Run the migrations.
-   */
   public function up(): void
   {
     Schema::create('stok_obats', function (Blueprint $table) {
-      $table->id(); // Primary key
-      $table->string('nama'); // Nama obat
-      $table->integer('jumlah'); // Jumlah stok
-      $table->string('lokasi'); // Lokasi penyimpanan
-      $table->date('tanggal_kadaluarsa'); // Tanggal kadaluarsa
-      $table->timestamps(); // created_at dan updated_at
+      $table->id();
+      $table->string('nama');
+      $table->unsignedInteger('jumlah');
+      $table->string('lokasi');
+      $table->date('tanggal_kadaluarsa');
+      $table->timestamps();
     });
   }
-
-  /**
-   * Reverse the migrations.
-   */
   public function down(): void
   {
     Schema::dropIfExists('stok_obats');

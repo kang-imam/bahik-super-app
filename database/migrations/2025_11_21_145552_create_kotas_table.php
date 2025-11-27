@@ -10,6 +10,7 @@ return new class extends Migration
   {
     Schema::create('kotas', function (Blueprint $table) {
       $table->id();
+      $table->enum('jenis', ['kabupaten', 'kota']);
       $table->string('nama');
       $table->foreignId('provinsi_id')->constrained('provinsis')->onDelete('cascade');
       $table->softDeletes();

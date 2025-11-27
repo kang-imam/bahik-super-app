@@ -10,21 +10,17 @@ return new class extends Migration
   {
     Schema::create('surats', function (Blueprint $table) {
       $table->id();
-
-      // Jenis surat: 'masuk' atau 'keluar'
-      $table->enum('jenis_surat', ['masuk', 'keluar']);
-
-      $table->string('nomor_surat')->unique(); // Nomor surat unik
-      $table->string('pengirim');              // Pengirim surat
-      $table->string('penerima');              // Penerima surat
-      $table->string('perihal');               // Perihal surat
-      $table->date('tanggal');                 // Tanggal surat
-      $table->string('file_surat')->nullable(); // File surat, opsional
-
-      $table->timestamps(); // created_at dan updated_at
+      $table->enum('jenis_surat', ['masuk', 'keluar'])->index();
+      $table->string('nomor_surat')->unique();
+      $table->string('pengirim');
+      $table->string('penerima');
+      $table->string('perihal');
+      $table->date('tanggal')->index();
+      $table->string('file_surat')->nullable();
+      $table->timestamps();
+      $table->softDeletes();
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('surats');

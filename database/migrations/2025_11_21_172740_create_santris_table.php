@@ -10,26 +10,34 @@ return new class extends Migration
   {
     Schema::create('santris', function (Blueprint $table) {
       $table->uuid('id')->primary();
-      $table->foreignId('user_id')->constrained()->onDelete('cascade');
+      $table->foreignId('user_id')
+        ->constrained()
+        ->onDelete('cascade');
       $table->string('nis')->unique()->nullable();
-      $table->string('nik')->nullable();
-      $table->string('kk')->nullable();
+      $table->string('nik', 16)->nullable();
+      $table->string('kk', 16)->nullable();
       $table->string('nama_panggilan');
       $table->string('tempat_lahir');
       $table->date('tanggal_lahir');
       $table->year('tahun_masuk');
-      $table->foreignId('jenis_kelamin_id')->constrained('jenis_kelamins');
-      $table->foreignId('jenjang_pendidikan_id')->constrained('jenjang_pendidikans');
+      $table->foreignId('jenis_kelamin_id')
+        ->constrained('jenis_kelamins');
+      $table->foreignId('jenjang_pendidikan_id')
+        ->constrained('jenjang_pendidikans');
       $table->text('alamat')->nullable();
-      $table->foreignId('desa_id')->nullable()->constrained('desas');
-      $table->string('nomor_hp')->nullable();
+      $table->foreignId('desa_id')
+        ->nullable()
+        ->constrained('desas')
+        ->nullOnDelete();
+      $table->string('nomor_hp', 20)->nullable();
       $table->string('nama_ibu')->nullable();
       $table->string('nama_ayah')->nullable();
       $table->string('nama_wali')->nullable();
-      $table->string('nomor_hp_ibu')->nullable();
-      $table->string('nomor_hp_ayah')->nullable();
-      $table->string('nomor_hp_wali')->nullable();
-      $table->enum('status', ['nonaktif', 'aktif', 'cuti', 'berhenti', 'alumni'])->default('nonaktif');
+      $table->string('nomor_hp_ibu', 20)->nullable();
+      $table->string('nomor_hp_ayah', 20)->nullable();
+      $table->string('nomor_hp_wali', 20)->nullable();
+      $table->enum('status', ['nonaktif', 'aktif', 'cuti', 'berhenti', 'alumni'])
+        ->default('nonaktif');
       $table->timestamps();
       $table->softDeletes();
     });

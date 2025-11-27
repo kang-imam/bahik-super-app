@@ -10,12 +10,20 @@ return new class extends Migration
   {
     Schema::create('wali_santris', function (Blueprint $table) {
       $table->id();
-      $table->foreignUuid('santri_id')->constrained('santris')->onDelete('cascade');
-      $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
+      $table->foreignUuid('santri_id')
+        ->constrained('santris')
+        ->onDelete('cascade');
+      $table->foreignId('user_id')
+        ->nullable()
+        ->constrained('users')
+        ->nullOnDelete();
       $table->enum('hubungan', ['ayah', 'ibu', 'wali']);
-      $table->string('nomor_hp')->nullable();
+      $table->string('nomor_hp', 20)->nullable();
       $table->text('alamat')->nullable();
-      $table->foreignId('desa_id')->nullable()->constrained('desas');
+      $table->foreignId('desa_id')
+        ->nullable()
+        ->constrained('desas')
+        ->nullOnDelete();
       $table->string('pekerjaan')->nullable();
       $table->string('penghasilan')->nullable();
       $table->timestamps();

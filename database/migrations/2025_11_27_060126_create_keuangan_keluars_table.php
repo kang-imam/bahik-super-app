@@ -10,14 +10,13 @@ return new class extends Migration
   {
     Schema::create('keuangan_keluars', function (Blueprint $table) {
       $table->id();
-      $table->string('kategori'); // kategori pengeluaran
-      $table->decimal('jumlah', 15, 2); // jumlah uang
-      $table->date('tanggal'); // tanggal pengeluaran
-      $table->string('tujuan')->nullable(); // tujuan pengeluaran, bisa kosong
+      $table->string('kategori');
+      $table->decimal('jumlah', 15, 2);
+      $table->date('tanggal');
+      $table->string('tujuan')->nullable();
       $table->timestamps();
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('keuangan_keluars');

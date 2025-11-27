@@ -10,19 +10,14 @@ return new class extends Migration
   {
     Schema::create('notifikasis', function (Blueprint $table) {
       $table->id();
-
       $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-      // Relasi ke tabel users
-
-      $table->string('judul');    // Judul notifikasi
-      $table->text('pesan');      // Isi pesan notifikasi
-      $table->date('tanggal');    // Tanggal notifikasi
-      $table->boolean('status_baca')->default(false); // Status baca, default false
-
+      $table->string('judul');
+      $table->text('pesan');
+      $table->date('tanggal');
+      $table->boolean('status_baca')->default(false);
       $table->timestamps();
     });
   }
-
   public function down(): void
   {
     Schema::dropIfExists('notifikasis');

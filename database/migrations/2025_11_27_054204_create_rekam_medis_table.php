@@ -10,13 +10,20 @@ return new class extends Migration
   {
     Schema::create('rekam_medis', function (Blueprint $table) {
       $table->id();
-      $table->foreignId('santri_id')->constrained('santris')->onDelete('cascade');
+      $table->uuid('santri_id');
+      $table->foreign('santri_id')
+        ->references('id')
+        ->on('santris')
+        ->onDelete('cascade');
       $table->text('keluhan');
       $table->text('diagnosa')->nullable();
       $table->text('tindakan')->nullable();
       $table->text('obat')->nullable();
       $table->date('tanggal_periksa');
-      $table->foreignId('petugas_kesehatan_id')->constrained('users')->onDelete('set null')->nullable();
+      $table->foreignId('petugas_kesehatan_id')
+        ->nullable()
+        ->constrained('users')
+        ->nullOnDelete();
       $table->timestamps();
     });
   }
