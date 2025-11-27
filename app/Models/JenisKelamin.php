@@ -16,4 +16,8 @@ class JenisKelamin extends Model
   {
     return $this->morphMany(User::class, 'akses');
   }
+  public function santri()
+  {
+    return $this->hasMany(Santri::class, 'jenis_kelamin_id');
+  }
 }

@@ -11,10 +11,13 @@ return new class extends Migration
     Schema::create('santris', function (Blueprint $table) {
       $table->uuid('id')->primary();
       $table->foreignId('user_id')->constrained()->onDelete('cascade');
+      $table->string('nis')->unique()->nullable();
       $table->string('nama_panggilan');
       $table->string('tempat_lahir');
       $table->date('tanggal_lahir');
+      $table->year('tahun_masuk');
       $table->foreignId('jenis_kelamin_id')->constrained('jenis_kelamins');
+      $table->foreignId('jenjang_pendidikan_id')->constrained('jenjang_pendidikans');
       $table->timestamps();
       $table->softDeletes();
     });
