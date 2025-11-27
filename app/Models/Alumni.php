@@ -13,6 +13,7 @@ class Alumni extends Model
     'santri_id',
     'pekerjaan',
     'tahun_lulus',
+    'status_verifikasi',
   ];
   public function santri()
   {

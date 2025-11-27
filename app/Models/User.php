@@ -26,8 +26,8 @@ class User extends Authenticatable
     'email',
     'password',
     'role_id',
-    'id_akses_type',
-    'id_akses',
+    'akses_id',
+    'akses_type',
   ];
   /**
    * The attributes that should be hidden for serialization.
@@ -65,10 +65,6 @@ class User extends Authenticatable
   {
     return $this->morphTo();
   }
-  public function getAksesDataAttribute()
-  {
-    return $this->akses()->first();
-  }
   public function santri()
   {
     return $this->hasOne(Santri::class);
@@ -79,6 +75,13 @@ class User extends Authenticatable
   }
   public function alumni()
   {
-    return $this->hasOne(Alumni::class, 'santri_id', 'santri_id');
+    return $this->hasOneThrough(
+      Alumni::class,
+      Santri::class,
+      'user_id',
+      'santri_id',
+      'id',
+      'id'
+    );
   }
 }

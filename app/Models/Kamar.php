@@ -21,4 +21,8 @@ class Kamar extends Model
   {
     return $this->morphMany(User::class, 'akses');
   }
+  public function penempatanKamars()
+  {
+    return $this->hasMany(PenempatanKamar::class);
+  }
 }

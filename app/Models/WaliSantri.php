@@ -12,14 +12,23 @@ class WaliSantri extends Model
   protected $fillable = [
     'santri_id',
     'user_id',
-    'jenis_wali',
+    'hubungan',
+    'nomor_hp',
+    'alamat',
+    'desa_id',
+    'pekerjaan',
+    'penghasilan',
   ];
   public function santri()
   {
     return $this->belongsTo(Santri::class);
   }
-  public function wali()
+  public function user()
   {
     return $this->belongsTo(User::class, 'user_id');
+  }
+  public function desa()
+  {
+    return $this->belongsTo(Desa::class);
   }
 }

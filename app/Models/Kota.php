@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Kota extends Model
 {
   use SoftDeletes;
-  protected $fillable = ['nama', 'provinsi_id'];
+  protected $fillable = [
+    'nama',
+    'jenis',
+    'provinsi_id'
+  ];
   public function provinsi()
   {
     return $this->belongsTo(Provinsi::class);
