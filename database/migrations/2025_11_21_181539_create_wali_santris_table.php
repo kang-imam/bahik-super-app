@@ -11,8 +11,13 @@ return new class extends Migration
     Schema::create('wali_santris', function (Blueprint $table) {
       $table->id();
       $table->foreignUuid('santri_id')->constrained('santris')->onDelete('cascade');
-      $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-      $table->string('jenis_wali');
+      $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('cascade');
+      $table->enum('hubungan', ['ayah', 'ibu', 'wali']);
+      $table->string('nomor_hp')->nullable();
+      $table->text('alamat')->nullable();
+      $table->foreignId('desa_id')->nullable()->constrained('desas');
+      $table->string('pekerjaan')->nullable();
+      $table->string('penghasilan')->nullable();
       $table->timestamps();
       $table->softDeletes();
     });
