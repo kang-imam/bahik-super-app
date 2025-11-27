@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -16,6 +17,29 @@ return new class extends Migration
       $table->timestamps();
       $table->softDeletes();
     });
+    Schema::create('jenis_kelamins', function (Blueprint $table) {
+      $table->id();
+      $table->string('nama');
+      $table->string('kode', 2);
+      $table->text('deskripsi')->nullable();
+      $table->timestamps();
+    });
+    DB::table('jenis_kelamins')->insert([
+      [
+        'nama' => 'Putra',
+        'kode' => 'Pa',
+        'deskripsi' => 'Santri Putra',
+        'created_at' => now(),
+        'updated_at' => now(),
+      ],
+      [
+        'nama' => 'Putri',
+        'kode' => 'Pi',
+        'deskripsi' => 'Santri Putri',
+        'created_at' => now(),
+        'updated_at' => now(),
+      ],
+    ]);
     Schema::create('users', function (Blueprint $table) {
       $table->id();
       $table->string('name');
@@ -26,6 +50,10 @@ return new class extends Migration
       $table->foreignId('role_id')
         ->nullable()
         ->constrained('roles')
+        ->onDelete('set null');
+      $table->foreignId('jenis_kelamin_id')
+        ->nullable()
+        ->constrained('jenis_kelamins')
         ->onDelete('set null');
       $table->nullableMorphs('akses');
       $table->foreignId('current_team_id')->nullable();
@@ -52,6 +80,7 @@ return new class extends Migration
     Schema::dropIfExists('sessions');
     Schema::dropIfExists('password_reset_tokens');
     Schema::dropIfExists('users');
+    Schema::dropIfExists('jenis_kelamins');
     Schema::dropIfExists('roles');
   }
 };

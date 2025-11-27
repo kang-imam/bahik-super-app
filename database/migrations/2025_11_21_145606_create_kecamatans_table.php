@@ -12,6 +12,7 @@ return new class extends Migration
       $table->id();
       $table->string('nama');
       $table->foreignId('kota_id')->constrained('kotas')->onDelete('cascade');
+      $table->unique(['nama', 'kota_id']);
       $table->timestamps();
       $table->softDeletes();
     });

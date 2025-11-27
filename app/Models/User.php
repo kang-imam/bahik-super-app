@@ -16,43 +16,24 @@ class User extends Authenticatable
   use HasProfilePhoto;
   use Notifiable;
   use TwoFactorAuthenticatable;
-  /**
-   * The attributes that are mass assignable.
-   *
-   * @var array<int, string>
-   */
   protected $fillable = [
     'name',
     'email',
     'password',
     'role_id',
+    'jenis_kelamin_id',
     'akses_id',
     'akses_type',
   ];
-  /**
-   * The attributes that should be hidden for serialization.
-   *
-   * @var array<int, string>
-   */
   protected $hidden = [
     'password',
     'remember_token',
     'two_factor_recovery_codes',
     'two_factor_secret',
   ];
-  /**
-   * The accessors to append to the model's array form.
-   *
-   * @var array<int, string>
-   */
   protected $appends = [
     'profile_photo_url',
   ];
-  /**
-   * The attributes that should be cast.
-   *
-   * @var array<string, string>
-   */
   protected $casts = [
     'email_verified_at' => 'datetime',
     'password' => 'hashed',
@@ -60,6 +41,10 @@ class User extends Authenticatable
   public function role()
   {
     return $this->belongsTo(Role::class);
+  }
+  public function jenisKelamin()
+  {
+    return $this->belongsTo(JenisKelamin::class);
   }
   public function akses()
   {
