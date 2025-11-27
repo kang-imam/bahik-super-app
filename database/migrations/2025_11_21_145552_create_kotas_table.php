@@ -13,8 +13,8 @@ return new class extends Migration
       $table->enum('jenis', ['kabupaten', 'kota']);
       $table->string('nama');
       $table->foreignId('provinsi_id')->constrained('provinsis')->onDelete('cascade');
-      $table->softDeletes();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

@@ -15,6 +15,7 @@ return new class extends Migration
       $table->string('lokasi');
       $table->date('tanggal_kadaluarsa');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

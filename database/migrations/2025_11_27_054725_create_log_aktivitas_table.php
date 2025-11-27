@@ -17,6 +17,7 @@ return new class extends Migration
       $table->text('aktivitas');
       $table->string('ip_address', 45);
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

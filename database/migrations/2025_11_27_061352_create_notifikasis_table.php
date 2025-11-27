@@ -16,6 +16,7 @@ return new class extends Migration
       $table->date('tanggal');
       $table->boolean('status_baca')->default(false);
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

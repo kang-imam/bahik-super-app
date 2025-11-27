@@ -14,8 +14,8 @@ return new class extends Migration
       $table->foreignId('kecamatan_id')
         ->constrained('kecamatans')
         ->onDelete('cascade');
-      $table->softDeletes();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

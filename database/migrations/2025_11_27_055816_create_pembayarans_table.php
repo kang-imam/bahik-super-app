@@ -23,6 +23,7 @@ return new class extends Migration
       $table->date('tanggal_bayar');
       $table->string('bukti_transfer')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

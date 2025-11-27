@@ -17,6 +17,7 @@ return new class extends Migration
       $table->enum('status', ['aktif', 'cadangan', 'nonaktif'])
         ->default('cadangan');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

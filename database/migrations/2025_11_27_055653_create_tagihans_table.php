@@ -22,6 +22,7 @@ return new class extends Migration
       $table->enum('status', ['belum lunas', 'lunas'])
         ->default('belum lunas');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

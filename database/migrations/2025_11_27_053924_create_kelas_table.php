@@ -13,6 +13,7 @@ return new class extends Migration
       $table->string('nama');
       $table->string('wali_kelas')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

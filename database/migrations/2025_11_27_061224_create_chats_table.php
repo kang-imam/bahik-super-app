@@ -16,6 +16,7 @@ return new class extends Migration
       $table->timestamp('waktu_kirim')->useCurrent();
       $table->boolean('status_baca')->default(false);
       $table->timestamps();
+      $table->softDeletes();
       $table->foreign('pengirim_id', 'fk_chats_pengirim')
         ->references('id')->on('users')
         ->onDelete('cascade');

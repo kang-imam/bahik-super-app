@@ -11,8 +11,8 @@ return new class extends Migration
     Schema::create('provinsis', function (Blueprint $table) {
       $table->id();
       $table->string('nama');
-      $table->softDeletes();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

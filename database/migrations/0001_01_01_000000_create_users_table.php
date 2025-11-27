@@ -13,6 +13,7 @@ return new class extends Migration
       $table->string('name')->unique();
       $table->string('slug')->unique();
       $table->timestamps();
+      $table->softDeletes();
     });
     Schema::create('users', function (Blueprint $table) {
       $table->id();
@@ -29,6 +30,7 @@ return new class extends Migration
       $table->foreignId('current_team_id')->nullable();
       $table->string('profile_photo_path', 2048)->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
     Schema::create('password_reset_tokens', function (Blueprint $table) {
       $table->string('email')->primary();

@@ -17,6 +17,7 @@ return new class extends Migration
       $table->string('file_path');
       $table->timestamp('tanggal_upload')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

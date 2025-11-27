@@ -12,8 +12,8 @@ return new class extends Migration
       $table->id();
       $table->string('nama');
       $table->foreignId('kota_id')->constrained('kotas')->onDelete('cascade');
-      $table->softDeletes();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

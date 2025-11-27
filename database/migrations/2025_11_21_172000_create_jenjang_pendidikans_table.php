@@ -13,6 +13,7 @@ return new class extends Migration
       $table->string('kode')->unique();
       $table->string('nama');
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

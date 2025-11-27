@@ -15,6 +15,7 @@ return new class extends Migration
       $table->string('jabatan');
       $table->string('wilayah')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void

@@ -16,6 +16,7 @@ return new class extends Migration
       $table->date('tanggal_terbit');
       $table->string('lampiran')->nullable();
       $table->timestamps();
+      $table->softDeletes();
     });
   }
   public function down(): void
