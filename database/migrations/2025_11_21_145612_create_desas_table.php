@@ -10,6 +10,7 @@ return new class extends Migration
   {
     Schema::create('desas', function (Blueprint $table) {
       $table->id();
+      $table->enum('jenis', ['desa', 'kelurahan']);
       $table->string('nama');
       $table->foreignId('kecamatan_id')
         ->constrained('kecamatans')

@@ -13,7 +13,7 @@ return new class extends Migration
       $table->foreignUuid('santri_id')
         ->constrained('santris')
         ->onDelete('cascade');
-      $table->string('uid')->unique();
+      $table->string('uid', 100)->unique();
       $table->enum('status', ['aktif', 'cadangan', 'nonaktif'])
         ->default('cadangan');
       $table->timestamps();
