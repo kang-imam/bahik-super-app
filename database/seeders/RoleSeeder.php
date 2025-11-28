@@ -30,7 +30,6 @@ class RoleSeeder extends Seeder
       ['Wali Santri', 'wali-santri', 'Akses bagi wali santri'],
       ['Alumni', 'alumni', 'Akses bagi alumni pesantren'],
     ];
-
     foreach ($roles as $role) {
       Role::updateOrCreate(
         ['slug' => $role[1]],
