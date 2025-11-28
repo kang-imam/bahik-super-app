@@ -13,31 +13,24 @@ return new class extends Migration
       $table->id();
       $table->string('name')->unique();
       $table->string('slug')->unique();
-      $table->string('keterangan')->unique();
+      $table->text('keterangan')->nullable();
       $table->timestamps();
       $table->softDeletes();
     });
     Schema::create('jenis_kelamins', function (Blueprint $table) {
       $table->id();
       $table->string('nama');
-      $table->string('kode', 2);
-      $table->text('deskripsi')->nullable();
+      $table->string('kode', 1);
       $table->timestamps();
     });
     DB::table('jenis_kelamins')->insert([
       [
         'nama' => 'Putra',
-        'kode' => 'Pa',
-        'deskripsi' => 'Santri Putra',
-        'created_at' => now(),
-        'updated_at' => now(),
+        'kode' => 'L',
       ],
       [
         'nama' => 'Putri',
-        'kode' => 'Pi',
-        'deskripsi' => 'Santri Putri',
-        'created_at' => now(),
-        'updated_at' => now(),
+        'kode' => 'P',
       ],
     ]);
     Schema::create('users', function (Blueprint $table) {

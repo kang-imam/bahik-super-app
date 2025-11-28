@@ -10,7 +10,6 @@ class JenisKelamin extends Model
   protected $fillable = [
     'nama',
     'kode',
-    'deskripsi',
   ];
   public function users()
   {
