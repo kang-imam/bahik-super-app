@@ -22,6 +22,23 @@ class DatabaseSeeder extends Seeder
       AlumniSeeder::class,
       UserSeeder::class,
       KartuSantriSeeder::class,
+      DokumenSantriSeeder::class,
+      PenempatanKamarSeeder::class,
+      RekamMedisSeeder::class,
+      StokObatSeeder::class,
+      LogAktivitasSeeder::class,
+      IzinKesehatanSeeder::class,
+      PelanggaranSeeder::class,
+      SanksiSeeder::class,
+      TagihanSeeder::class,
+      PembayaranSeeder::class,
+      KeuanganMasukSeeder::class,
+      KeuanganKeluarSeeder::class,
+      SuratSeeder::class,
+      PengumumanSeeder::class,
+      DonasiAlumniSeeder::class,
+      ChatSeeder::class,
+      NotifikasiSeeder::class,
     ]);
   }
 }

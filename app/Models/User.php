@@ -59,6 +59,18 @@ class User extends Authenticatable
   {
     return $this->hasMany(WaliSantri::class, 'user_id');
   }
+  public function rekamMedisDitangani()
+  {
+    return $this->hasMany(RekamMedis::class, 'petugas_kesehatan_id');
+  }
+  public function sanksis()
+  {
+    return $this->hasMany(Sanksi::class, 'pelaksana_id');
+  }
+  public function pelanggarans()
+  {
+    return $this->hasMany(Pelanggaran::class, 'petugas_id');
+  }
   public function alumni()
   {
     return $this->hasOneThrough(

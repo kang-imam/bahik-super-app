@@ -12,7 +12,7 @@ return new class extends Migration
       $table->id();
       $table->foreignId('pelanggaran_id')
         ->constrained('pelanggarans')
-        ->onDelete('cascade');
+        ->cascadeOnDelete();
       $table->string('jenis_sanksi');
       $table->string('durasi')->nullable();
       $table->text('catatan')->nullable();

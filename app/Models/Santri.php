@@ -11,9 +11,6 @@ use Illuminate\Support\Facades\DB;
 class Santri extends Model
 {
   use HasFactory, SoftDeletes;
-  protected $primaryKey = 'id';
-  protected $keyType = 'string';
-  public $incrementing = false;
   protected $fillable = [
     'user_id',
     'nis',
@@ -43,9 +40,6 @@ class Santri extends Model
   protected static function booted()
   {
     static::creating(function ($santri) {
-      if (empty($santri->{$santri->getKeyName()})) {
-        $santri->{$santri->getKeyName()} = (string) Str::uuid();
-      }
       DB::transaction(function () use ($santri) {
         $lastSantri = Santri::where('tahun_masuk', $santri->tahun_masuk)
           ->where('jenis_kelamin_id', $santri->jenis_kelamin_id)
@@ -66,14 +60,20 @@ class Santri extends Model
           '0',
           STR_PAD_LEFT
         );
-        if ($lastSantri) {
-          $lastUrut = intval(substr($lastSantri->nis, -4)) + 1;
-        } else {
-          $lastUrut = 1;
-        }
+        $lastUrut = $lastSantri
+          ? intval(substr($lastSantri->nis, -4)) + 1
+          : 1;
+
         $urut = str_pad($lastUrut, 4, '0', STR_PAD_LEFT);
         $santri->nis = "{$tahunMasukCode}-{$jkCode}-{$jpCode}-{$urut}";
       });
+    });
+    static::deleting(function ($santri) {
+      if ($santri->isForceDeleting()) {
+        $santri->dokumen()->forceDelete();
+      } else {
+        $santri->dokumen()->delete();
+      }
     });
   }
   public function user()
@@ -107,5 +107,9 @@ class Santri extends Model
   public function penempatanKamars()
   {
     return $this->hasMany(PenempatanKamar::class, 'santri_id', 'id');
+  }
+  public function rekamMedis()
+  {
+    return $this->hasMany(RekamMedis::class, 'santri_id');
   }
 }

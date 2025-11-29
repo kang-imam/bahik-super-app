@@ -9,12 +9,9 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('izin_kesehatans', function (Blueprint $table) {
-      $table->id();
-      $table->uuid('santri_id');
-      $table->foreign('santri_id')
-        ->references('id')
-        ->on('santris')
-        ->onDelete('cascade');
+      $table->uuid('id')->primary();
+      $table->unsignedBigInteger('santri_id');
+      $table->foreign('santri_id')->references('id')->on('santris')->onDelete('cascade');
       $table->enum('jenis_izin', ['rawat', 'berobat', 'pulang']);
       $table->text('alasan');
       $table->date('tanggal_mulai');

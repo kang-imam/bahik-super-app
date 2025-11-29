@@ -12,9 +12,6 @@ class AlumniSeeder extends Seeder
   public function run(): void
   {
     $roleAlumni = Role::where('slug', 'alumni')->first();
-    if (!$roleAlumni) {
-      dd("Role 'alumni' belum ada! Pastikan RoleSeeder sudah dijalankan.");
-    }
     $santris = Santri::orderBy('created_at', 'desc')
       ->take(5)
       ->get();
@@ -38,6 +35,5 @@ class AlumniSeeder extends Seeder
         ]
       );
     }
-    echo "Seeder alumni selesai ✔\n";
   }
 }

@@ -12,6 +12,7 @@ return new class extends Migration
       $table->id();
       $table->string('nama');
       $table->foreignId('jenis_kelamin_id')->constrained('jenis_kelamins')->onDelete('cascade');
+      $table->unique(['nama', 'jenis_kelamin_id']);
       $table->timestamps();
       $table->softDeletes();
     });

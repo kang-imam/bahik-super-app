@@ -27,4 +27,8 @@ class Pelanggaran extends Model
   {
     return $this->belongsTo(User::class, 'petugas_id');
   }
+  public function sanksis()
+  {
+    return $this->hasMany(Sanksi::class);
+  }
 }

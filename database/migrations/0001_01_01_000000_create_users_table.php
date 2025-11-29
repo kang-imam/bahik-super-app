@@ -24,14 +24,8 @@ return new class extends Migration
       $table->timestamps();
     });
     DB::table('jenis_kelamins')->insert([
-      [
-        'nama' => 'Putra',
-        'kode' => 'L',
-      ],
-      [
-        'nama' => 'Putri',
-        'kode' => 'P',
-      ],
+      ['nama' => 'Laki-Laki', 'kode' => 'L'],
+      ['nama' => 'Perempuan', 'kode' => 'P'],
     ]);
     Schema::create('users', function (Blueprint $table) {
       $table->id();

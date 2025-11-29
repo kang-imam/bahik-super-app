@@ -15,10 +15,6 @@ class KamarSeeder extends Seeder
   {
     $password = 'password1234';
     $roleAdminKamar = Role::where('slug', 'admin-kamar')->first();
-    if (!$roleAdminKamar) {
-      $this->command->error('Role admin-kamar tidak ditemukan. Pastikan sudah ada di RoleSeeder.');
-      return;
-    }
     $emailCounter = 1;
     $asramas = Asrama::all();
     foreach ($asramas as $asrama) {

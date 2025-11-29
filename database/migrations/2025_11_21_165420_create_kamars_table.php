@@ -12,7 +12,8 @@ return new class extends Migration
       $table->id();
       $table->string('nama');
       $table->foreignId('asrama_id')->constrained('asramas')->onDelete('cascade');
-      $table->integer('kapasitas')->default(1);
+      $table->unsignedInteger('kapasitas')->default(1);
+      $table->unique(['nama', 'asrama_id']);
       $table->timestamps();
       $table->softDeletes();
     });

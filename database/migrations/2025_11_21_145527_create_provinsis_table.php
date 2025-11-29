@@ -10,7 +10,7 @@ return new class extends Migration
   {
     Schema::create('provinsis', function (Blueprint $table) {
       $table->id();
-      $table->string('nama');
+      $table->string('nama')->unique()->index();
       $table->timestamps();
       $table->softDeletes();
     });

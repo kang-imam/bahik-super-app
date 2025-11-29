@@ -9,13 +9,15 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('santris', function (Blueprint $table) {
-      $table->uuid('id')->primary();
+      $table->id();
       $table->foreignId('user_id')
         ->constrained()
         ->onDelete('cascade');
-      $table->string('nis')->unique();
+      $table->string('nis', 13)->unique();
       $table->string('nik', 16)->nullable();
       $table->string('kk', 16)->nullable();
+      $table->unique('nik');
+      $table->unique('kk');
       $table->string('nama_panggilan');
       $table->string('tempat_lahir');
       $table->date('tanggal_lahir');

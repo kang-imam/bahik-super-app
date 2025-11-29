@@ -9,15 +9,12 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('pembayarans', function (Blueprint $table) {
-      $table->id();
-      $table->foreignId('tagihan_id')
+      $table->uuid('id')->primary();
+      $table->foreignUuid('tagihan_id')
         ->constrained('tagihans')
         ->cascadeOnDelete();
-      $table->uuid('santri_id');
-      $table->foreign('santri_id')
-        ->references('id')
-        ->on('santris')
-        ->onDelete('cascade');
+      $table->unsignedBigInteger('santri_id');
+      $table->foreign('santri_id')->references('id')->on('santris')->onDelete('cascade');
       $table->decimal('nominal', 15, 2);
       $table->string('metode_pembayaran', 50);
       $table->date('tanggal_bayar');

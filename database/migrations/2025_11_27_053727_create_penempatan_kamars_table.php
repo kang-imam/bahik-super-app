@@ -10,7 +10,7 @@ return new class extends Migration
   {
     Schema::create('penempatan_kamars', function (Blueprint $table) {
       $table->id();
-      $table->foreignUuid('santri_id')
+      $table->foreignId('santri_id')
         ->constrained('santris')
         ->onDelete('cascade');
       $table->foreignId('kamar_id')

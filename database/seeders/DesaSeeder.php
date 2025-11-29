@@ -15,9 +15,6 @@ class DesaSeeder extends Seeder
   public function run(): void
   {
     $roleId = Role::where('slug', 'admin-alumni-daerah')->value('id');
-    if (!$roleId) {
-      throw new \Exception("Role 'admin-alumni-daerah' tidak ditemukan. Pastikan RoleSeeder sudah dijalankan.");
-    }
     $kecamatans = Kecamatan::all();
     $counter = 1;
     foreach ($kecamatans as $kecamatan) {

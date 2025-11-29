@@ -12,9 +12,11 @@ return new class extends Migration
       $table->id();
       $table->enum('jenis', ['desa', 'kelurahan']);
       $table->string('nama');
+      $table->unique(['nama', 'kecamatan_id']);
       $table->foreignId('kecamatan_id')
         ->constrained('kecamatans')
         ->onDelete('cascade');
+      $table->index('kecamatan_id');
       $table->timestamps();
       $table->softDeletes();
     });

@@ -10,10 +10,8 @@ return new class extends Migration
   {
     Schema::create('rekam_medis', function (Blueprint $table) {
       $table->id();
-      $table->uuid('santri_id');
-      $table->foreign('santri_id')
-        ->references('id')
-        ->on('santris')
+      $table->foreignId('santri_id')
+        ->constrained('santris')
         ->onDelete('cascade');
       $table->text('keluhan');
       $table->text('diagnosa')->nullable();

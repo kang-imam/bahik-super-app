@@ -9,7 +9,7 @@ return new class extends Migration
   public function up(): void
   {
     Schema::create('keuangan_masuks', function (Blueprint $table) {
-      $table->id();
+      $table->uuid('id')->primary();
       $table->string('kategori');
       $table->decimal('jumlah', 15, 2);
       $table->date('tanggal');

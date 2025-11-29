@@ -16,6 +16,9 @@ class DokumenSantri extends Model
     'file_path',
     'tanggal_upload',
   ];
+  protected $casts = [
+    'tanggal_upload' => 'datetime',
+  ];
   public function santri()
   {
     return $this->belongsTo(Santri::class, 'santri_id');

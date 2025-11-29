@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Pengumuman extends Model
 {
   use SoftDeletes;
+  protected $table = 'pengumumans';
   protected $fillable = [
     'judul',
     'isi',
