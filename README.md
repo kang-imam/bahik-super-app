@@ -1,4 +1,4 @@
-# ![Logo BAHIK Super App](path/to/logo.png) **BAHIK Super App**
+**BAHIK Super App**
 
 **Pesan Hikmah Digital Ecosystem** 📱✨
 
@@ -143,6 +143,6 @@ _Catatan: Rincian teknis lengkap dapat disiapkan pada tahap perencanaan teknis b
 **BAHIK Super App** dirancang untuk memperkuat fungsi pesantren, mempermudah pengelolaan, dan menjaga kesinambungan ilmu serta hubungan alumni. Dengan restu Kiai dan dukungan pengurus, aplikasi ini dapat menjadi warisan digital yang membawa manfaat jangka panjang bagi Pesantren Baitul Hikmah Haurkuning.
 
 **Disusun oleh:**  
-Imamul Mutaqin Al Hanif - Penggagas BAHIK Super App
+Imamul Mutaqin Al Hanif - Developer BAHIK Super App
 
 ---
