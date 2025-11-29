@@ -24,6 +24,7 @@ class User extends Authenticatable
     'jenis_kelamin_id',
     'akses_id',
     'akses_type',
+    'profile_photo_path',
   ];
   protected $hidden = [
     'password',

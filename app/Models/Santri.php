@@ -50,7 +50,7 @@ class Santri extends Model
         $lastSantri = Santri::where('tahun_masuk', $santri->tahun_masuk)
           ->where('jenis_kelamin_id', $santri->jenis_kelamin_id)
           ->where('jenjang_pendidikan_id', $santri->jenjang_pendidikan_id)
-          ->lockForUpdate() // MENCEGAH DUPLIKASI NOMOR URUT!
+          ->lockForUpdate()
           ->orderBy('nis', 'desc')
           ->first();
         $tahunMasukCode = str_pad(

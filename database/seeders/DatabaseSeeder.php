@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
       WaliSantriSeeder::class,
       AlumniSeeder::class,
       UserSeeder::class,
+      KartuSantriSeeder::class,
     ]);
   }
 }
