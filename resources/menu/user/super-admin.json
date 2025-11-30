@@ -28,12 +28,6 @@
       "url": "/super-admin-kelola-role"
     },
     {
-      "icon": "menu-icon icon-base ti tabler-lock",
-      "name": "Kelola Hak Akses",
-      "slug": "super-admin-kelola-hak-akses",
-      "url": "/super-admin-kelola-hak-akses"
-    },
-    {
       "icon": "menu-icon icon-base ti tabler-puzzle",
       "name": "Kelola Modul",
       "slug": "super-admin-kelola-modul",
@@ -53,9 +47,9 @@
     },
     {
       "icon": "menu-icon icon-base ti tabler-search",
-      "name": "Pantau Log Data",
-      "slug": "super-admin-pantau-logdata",
-      "url": "/super-admin-pantau-logdata"
+      "name": "Log Data",
+      "slug": "super-admin-log-data",
+      "url": "/super-admin-log-data"
     },
     {
       "icon": "menu-icon icon-base ti tabler-plug",
@@ -170,9 +164,9 @@
       "submenu": [
         {
           "icon": "menu-icon icon-base ti tabler-users",
-          "name": "Data Santri",
-          "slug": "super-admin-admin-santri-data-santri",
-          "url": "/super-admin-data-santri"
+          "name": "Rekap Santri",
+          "slug": "super-admin-admin-santri-rekap-santri",
+          "url": "/super-admin-rekap-santri"
         },
         {
           "icon": "menu-icon icon-base ti tabler-file-plus",
@@ -425,9 +419,9 @@
         },
         {
           "icon": "menu-icon icon-base ti tabler-report-analytics",
-          "name": "Rekap Keamanan",
-          "slug": "super-admin-admin-keamanan-rekap-keamanan",
-          "url": "/super-admin-rekap-keamanan"
+          "name": "Laporan Keamanan",
+          "slug": "super-admin-admin-keamanan-laporan-keamanan",
+          "url": "/super-admin-laporan-keamanan"
         }
       ]
     },
@@ -462,9 +456,9 @@
         },
         {
           "icon": "menu-icon icon-base ti tabler-report",
-          "name": "Rekap Akademik",
-          "slug": "super-admin-admin-pendidikan-rekap-akademik",
-          "url": "/super-admin-rekap-akademik"
+          "name": "Laporan Akademik",
+          "slug": "super-admin-admin-pendidikan-laporan-akademik",
+          "url": "/super-admin-laporan-akademik"
         },
         {
           "icon": "menu-icon icon-base ti tabler-clipboard-check",
@@ -1065,9 +1059,9 @@
         },
         {
           "icon": "menu-icon icon-base ti tabler-star",
-          "name": "Nilai Santri",
-          "slug": "santri-nilai-santri",
-          "url": "/santri-nilai-santri"
+          "name": "Rekap Nilai",
+          "slug": "santri-rekap-nilai",
+          "url": "/santri-rekap-nilai"
         },
         {
           "icon": "menu-icon icon-base ti tabler-clipboard-check",
