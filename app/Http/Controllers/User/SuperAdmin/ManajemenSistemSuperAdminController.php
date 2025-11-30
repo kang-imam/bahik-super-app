@@ -9,6 +9,6 @@ class ManajemenSistemSuperAdminController extends Controller
 {
   public function index()
   {
-    return view('content.user.super-admin.manajemen-sistem');
+    return view('content.user.coming-soon');
   }
 }

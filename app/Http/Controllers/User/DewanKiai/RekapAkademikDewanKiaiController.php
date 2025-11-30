@@ -9,6 +9,6 @@ class RekapAkademikDewanKiaiController extends Controller
 {
   public function index()
   {
-    return view('content.user.dewan-kiai.coming-soon');
+    return view('content.user.coming-soon');
   }
 }
