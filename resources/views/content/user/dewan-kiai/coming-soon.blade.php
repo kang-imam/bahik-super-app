@@ -4,8 +4,8 @@
 
 @extends('layouts/layoutMaster')
 
-@section('title', 'Dashboard Dewan Kiai')
+@section('title', 'Coming Soon')
 
 @section('content')
-  <h4>Dashboard Dewan Kiai</h4>
+  <h4>Coming Soon</h4>
 @endsection
