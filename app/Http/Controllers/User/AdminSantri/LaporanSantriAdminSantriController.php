@@ -5,10 +5,10 @@ namespace App\Http\Controllers\User\AdminSantri;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DashboardAdminSantriController extends Controller
+class LaporanSantriAdminSantriController extends Controller
 {
   public function index()
   {
-    return view('content.user.coming-soon');
+    return view('content.user.dewan-kiai.coming-soon');
   }
 }

@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "admin-santri-dashboard",
-      "url": "/admin-santri-dashboard"
+      "slug": "admin-santri.dashboard",
+      "url": "/admin-santri/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,62 +12,62 @@
     {
       "icon": "menu-icon icon-base ti tabler-users",
       "name": "Data Santri",
-      "slug": "admin-santri-data-santri",
-      "url": "/admin-santri-data-santri"
+      "slug": "admin-santri.data-santri",
+      "url": "/admin-santri/data-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-file-plus",
       "name": "Registrasi Santri",
-      "slug": "admin-santri-registrasi-santri",
-      "url": "/admin-santri-registrasi-santri"
+      "slug": "admin-santri.registrasi-santri",
+      "url": "/admin-santri/registrasi-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-transfer",
       "name": "Mutasi Santri",
-      "slug": "admin-santri-mutasi-santri",
-      "url": "/admin-santri-mutasi-santri"
+      "slug": "admin-santri.mutasi-santri",
+      "url": "/admin-santri/mutasi-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-archive",
       "name": "Arsip Santri",
-      "slug": "admin-santri-arsip-santri",
-      "url": "/admin-santri-arsip-santri"
+      "slug": "admin-santri.arsip-santri",
+      "url": "/admin-santri/arsip-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-id",
       "name": "Kartu Santri",
-      "slug": "admin-santri-kartu-santri",
-      "url": "/admin-santri-kartu-santri"
+      "slug": "admin-santri.kartu-santri",
+      "url": "/admin-santri/kartu-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-history",
       "name": "Riwayat Santri",
-      "slug": "admin-santri-riwayat-santri",
-      "url": "/admin-santri-riwayat-santri"
+      "slug": "admin-santri.riwayat-santri",
+      "url": "/admin-santri/riwayat-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-user-check",
       "name": "Status Santri",
-      "slug": "admin-santri-status-santri",
-      "url": "/admin-santri-status-santri"
+      "slug": "admin-santri.status-santri",
+      "url": "/admin-santri/status-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-users-group",
       "name": "Kelola Wali",
-      "slug": "admin-santri-kelola-wali",
-      "url": "/admin-santri-kelola-wali"
+      "slug": "admin-santri.kelola-wali",
+      "url": "/admin-santri/kelola-wali"
     },
     {
       "icon": "menu-icon icon-base ti tabler-report",
       "name": "Laporan Santri",
-      "slug": "admin-santri-laporan-santri",
-      "url": "/admin-santri-laporan-santri"
+      "slug": "admin-santri.laporan-santri",
+      "url": "/admin-santri/laporan-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-file-check",
       "name": "Verifikasi Dokumen",
-      "slug": "admin-santri-verifikasi-dokumen",
-      "url": "/admin-santri-verifikasi-dokumen"
+      "slug": "admin-santri.verifikasi-dokumen",
+      "url": "/admin-santri/verifikasi-dokumen"
     }
   ]
 }
