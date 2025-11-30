@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class LaporanKamarSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.laporan-kamar');
+  }
 }

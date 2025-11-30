@@ -10,7 +10,7 @@
   <div class="{{ $containerFooter }}">
     <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
       <div class="text-body">
-        &copy; {{ date('Y') }}. <i>Made by</i>
+        &copy; {{ date('Y') }}. <i>Development by</i>
         <a href="{{ config('variables.creatorUrl', 'https://santrivisioner.id') }}" target="_blank" class="footer-link">
           <b>{{ config('variables.creatorName', 'Santri Visioner') }}</b>
         </a>

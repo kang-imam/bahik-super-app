@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class ArsipRegionalSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.arsip-regional');
+  }
 }

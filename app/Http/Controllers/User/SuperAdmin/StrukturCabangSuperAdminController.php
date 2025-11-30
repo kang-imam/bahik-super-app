@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class StrukturCabangSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.struktur-cabang');
+  }
 }

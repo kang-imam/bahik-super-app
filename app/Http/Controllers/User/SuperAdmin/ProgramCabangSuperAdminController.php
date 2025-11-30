@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class ProgramCabangSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.program-cabang');
+  }
 }

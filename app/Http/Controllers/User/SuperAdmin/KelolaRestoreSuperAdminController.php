@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class KelolaRestoreSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.kelola-restore');
+  }
 }

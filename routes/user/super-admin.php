@@ -1,8 +1,452 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// Gerbang Akses
 use App\Http\Controllers\User\SuperAdmin\DashboardSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ManajemenSistemSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaPenggunaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaRoleSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaModulSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AturNotifikasiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PantauAktivitasSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LogDataSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AturIntegrasiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaBackupSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaRestoreSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaUpdateSuperAdminController;
+// Dewan Kiai
+use App\Http\Controllers\User\SuperAdmin\DataSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapKehadiranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapPelanggaranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapPrestasiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapKesehatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapKeamananSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapAkademikSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaKiaiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PesanKiaiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\EvaluasiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KeputusanKiaiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanPesantrenSuperAdminController;
+// Admin Santri
+use App\Http\Controllers\User\SuperAdmin\RekapSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RegistrasiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\MutasiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KartuSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RiwayatSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StatusSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KelolaWaliSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\VerifikasiDokumenSuperAdminController;
+// Sekretaris
+use App\Http\Controllers\User\SuperAdmin\SuratMasukSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\SuratKeluarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipSuratSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaSuratSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DisposisiSuratSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\NotulenRapatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaRapatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanSekretarisSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InventarisArsipSuperAdminController;
+// Bendahara
+use App\Http\Controllers\User\SuperAdmin\KasPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KasAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PembayaranSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\TagihanSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RiwayatPembayaranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanKeuanganSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AnggaranTahunanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\CatatanTransaksiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DonasiPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapKeuanganSuperAdminController;
+// Keamanan
+use App\Http\Controllers\User\SuperAdmin\DataKeamananSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanPelanggaranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalPatroliSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BukuTamuSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\IzinKeluarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\IzinMasukSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KameraKeamananSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\CatatanPengawasanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StatusKeamananSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanKeamananSuperAdminController;
+// Pendidikan
+use App\Http\Controllers\User\SuperAdmin\DataPelajaranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalPelajaranSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalUjianSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\NilaiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanAkademikSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AbsensiKelasSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapAbsensiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BahanAjarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanPendidikanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\EvaluasiAkademikSuperAdminController;
+// Kesehatan
+use App\Http\Controllers\User\SuperAdmin\DataKesehatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekamMedisSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ObatPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StokObatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LayananKesehatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PemeriksaanSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanKesehatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RujukanMedisSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\CatatanKlinikSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalKlinikSuperAdminController;
+// Asrama
+use App\Http\Controllers\User\SuperAdmin\DataAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AturAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InventarisAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PengurusAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PenghuniAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KebijakanAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StatusAsramaSuperAdminController;
+// Kamar
+use App\Http\Controllers\User\SuperAdmin\DataKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AturKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PenempatanSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PerpindahanKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InventarisKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KebersihanKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StatusHunianSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PengurusKamarSuperAdminController;
+// Alumni Pusat
+use App\Http\Controllers\User\SuperAdmin\DataAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RegistrasiAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ValidasiAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\NotifikasiPusatSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenPusatSuperAdminController;
+// Alumni Wilayah
+use App\Http\Controllers\User\SuperAdmin\DataWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ValidasiWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipWilayahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenWilayahSuperAdminController;
+// Alumni Cabang
+use App\Http\Controllers\User\SuperAdmin\DataCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ValidasiCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipCabangSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenCabangSuperAdminController;
+// Alumni Regional
+use App\Http\Controllers\User\SuperAdmin\DataRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ValidasiRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipRegionalSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenRegionalSuperAdminController;
+// Alumni Daerah
+use App\Http\Controllers\User\SuperAdmin\DataDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ValidasiDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AgendaDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ArsipDaerahSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DokumenDaerahSuperAdminController;
+// Santri
+use App\Http\Controllers\User\SuperAdmin\ProfilSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RekapNilaiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AbsensiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PelanggaranSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PrestasiSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KesehatanSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KeamananSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KeuanganSantriSuperAdminController;
+// Wali Santri
+use App\Http\Controllers\User\SuperAdmin\ProfilAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\LaporanAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\NilaiAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\AbsensiAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KeuanganAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KesehatanAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KeamananAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\RiwayatAnakSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PesanWaliSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiPesantrenSuperAdminController;
+// Alumni
+use App\Http\Controllers\User\SuperAdmin\JejaringAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DonasiSosialSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\MentoringSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KegiatanAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\DakwahAlumniSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\UpdateDataSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KomunikasiAlumniSuperAdminController;
+// User Baru
+use App\Http\Controllers\User\SuperAdmin\ProfilPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\StrukturOrganisasiSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\ProgramPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\JadwalKegiatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\BeritaPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\KontakPesantrenSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\PendaftaranSantriSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiAsramaSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiKamarSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiKeamananSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiKesehatanSuperAdminController;
+use App\Http\Controllers\User\SuperAdmin\InformasiPendidikanSuperAdminController;
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:Super Admin'])->group(function () {
-  Route::get('/super-admin-dashboard', [DashboardSuperAdminController::class, 'index'])->name('super-admin-dashboard');
-});
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:Super Admin'])
+  ->prefix('super-admin')
+  ->name('super-admin.')
+  ->group(function () {
+    Route::get('dashboard', [DashboardSuperAdminController::class, 'index'])->name('dashboard');
+    Route::get('manajemen-sistem', [ManajemenSistemSuperAdminController::class, 'index'])->name('manajemen-sistem');
+    Route::get('kelola-pengguna', [KelolaPenggunaSuperAdminController::class, 'index'])->name('kelola-pengguna');
+    Route::get('kelola-role', [KelolaRoleSuperAdminController::class, 'index'])->name('kelola-role');
+    Route::get('kelola-modul', [KelolaModulSuperAdminController::class, 'index'])->name('kelola-modul');
+    Route::get('atur-notifikasi', [AturNotifikasiSuperAdminController::class, 'index'])->name('atur-notifikasi');
+    Route::get('pantau-aktivitas', [PantauAktivitasSuperAdminController::class, 'index'])->name('pantau-aktivitas');
+    Route::get('log-data', [LogDataSuperAdminController::class, 'index'])->name('log-data');
+    Route::get('atur-integrasi', [AturIntegrasiSuperAdminController::class, 'index'])->name('atur-integrasi');
+    Route::get('kelola-backup', [KelolaBackupSuperAdminController::class, 'index'])->name('kelola-backup');
+    Route::get('kelola-restore', [KelolaRestoreSuperAdminController::class, 'index'])->name('kelola-restore');
+    Route::get('kelola-update', [KelolaUpdateSuperAdminController::class, 'index'])->name('kelola-update');
+    Route::name('dewan-kiai.')->group(function () {
+      Route::get('rekap-santri', [RekapSantriSuperAdminController::class, 'index'])->name('rekap-santri');
+      Route::get('rekap-kehadiran', [RekapKehadiranSuperAdminController::class, 'index'])->name('rekap-kehadiran');
+      Route::get('rekap-pelanggaran', [RekapPelanggaranSuperAdminController::class, 'index'])->name('rekap-pelanggaran');
+      Route::get('rekap-prestasi', [RekapPrestasiSuperAdminController::class, 'index'])->name('rekap-prestasi');
+      Route::get('rekap-kesehatan', [RekapKesehatanSuperAdminController::class, 'index'])->name('rekap-kesehatan');
+      Route::get('rekap-keamanan', [RekapKeamananSuperAdminController::class, 'index'])->name('rekap-keamanan');
+      Route::get('rekap-akademik', [RekapAkademikSuperAdminController::class, 'index'])->name('rekap-akademik');
+      Route::get('agenda-kiai', [AgendaKiaiSuperAdminController::class, 'index'])->name('agenda-kiai');
+      Route::get('pesan-kiai', [PesanKiaiSuperAdminController::class, 'index'])->name('pesan-kiai');
+      Route::get('evaluasi-santri', [EvaluasiSantriSuperAdminController::class, 'index'])->name('evaluasi-santri');
+      Route::get('keputusan-kiai', [KeputusanKiaiSuperAdminController::class, 'index'])->name('keputusan-kiai');
+      Route::get('laporan-pesantren', [LaporanPesantrenSuperAdminController::class, 'index'])->name('laporan-pesantren');
+    });
+    Route::name('admin-santri.')->group(function () {
+      Route::get('data-santri', [DataSantriSuperAdminController::class, 'index'])->name('data-santri');
+      Route::get('registrasi-santri', [RegistrasiSantriSuperAdminController::class, 'index'])->name('registrasi-santri');
+      Route::get('mutasi-santri', [MutasiSantriSuperAdminController::class, 'index'])->name('mutasi-santri');
+      Route::get('arsip-santri', [ArsipSantriSuperAdminController::class, 'index'])->name('arsip-santri');
+      Route::get('kartu-santri', [KartuSantriSuperAdminController::class, 'index'])->name('kartu-santri');
+      Route::get('riwayat-santri', [RiwayatSantriSuperAdminController::class, 'index'])->name('riwayat-santri');
+      Route::get('status-santri', [StatusSantriSuperAdminController::class, 'index'])->name('status-santri');
+      Route::get('kelola-wali', [KelolaWaliSuperAdminController::class, 'index'])->name('kelola-wali');
+      Route::get('laporan-santri', [LaporanSantriSuperAdminController::class, 'index'])->name('laporan-santri');
+      Route::get('verifikasi-dokumen', [VerifikasiDokumenSuperAdminController::class, 'index'])->name('verifikasi-dokumen');
+    });
+    Route::name('admin-sekretaris.')->group(function () {
+      Route::get('surat-masuk', [SuratMasukSuperAdminController::class, 'index'])->name('surat-masuk');
+      Route::get('surat-keluar', [SuratKeluarSuperAdminController::class, 'index'])->name('surat-keluar');
+      Route::get('arsip-surat', [ArsipSuratSuperAdminController::class, 'index'])->name('arsip-surat');
+      Route::get('agenda-surat', [AgendaSuratSuperAdminController::class, 'index'])->name('agenda-surat');
+      Route::get('disposisi-surat', [DisposisiSuratSuperAdminController::class, 'index'])->name('disposisi-surat');
+      Route::get('notulen-rapat', [NotulenRapatSuperAdminController::class, 'index'])->name('notulen-rapat');
+      Route::get('agenda-rapat', [AgendaRapatSuperAdminController::class, 'index'])->name('agenda-rapat');
+      Route::get('laporan-sekretaris', [LaporanSekretarisSuperAdminController::class, 'index'])->name('laporan-sekretaris');
+      Route::get('dokumen-pesantren', [DokumenPesantrenSuperAdminController::class, 'index'])->name('dokumen-pesantren');
+      Route::get('inventaris-arsip', [InventarisArsipSuperAdminController::class, 'index'])->name('inventaris-arsip');
+    });
+    Route::name('admin-bendahara.')->group(function () {
+      Route::get('kas-pesantren', [KasPesantrenSuperAdminController::class, 'index'])->name('kas-pesantren');
+      Route::get('kas-asrama', [KasAsramaSuperAdminController::class, 'index'])->name('kas-asrama');
+      Route::get('pembayaran-santri', [PembayaranSantriSuperAdminController::class, 'index'])->name('pembayaran-santri');
+      Route::get('tagihan-santri', [TagihanSantriSuperAdminController::class, 'index'])->name('tagihan-santri');
+      Route::get('riwayat-pembayaran', [RiwayatPembayaranSuperAdminController::class, 'index'])->name('riwayat-pembayaran');
+      Route::get('laporan-keuangan', [LaporanKeuanganSuperAdminController::class, 'index'])->name('laporan-keuangan');
+      Route::get('anggaran-tahunan', [AnggaranTahunanSuperAdminController::class, 'index'])->name('anggaran-tahunan');
+      Route::get('catatan-transaksi', [CatatanTransaksiSuperAdminController::class, 'index'])->name('catatan-transaksi');
+      Route::get('donasi-pesantren', [DonasiPesantrenSuperAdminController::class, 'index'])->name('donasi-pesantren');
+      Route::get('rekap-keuangan', [RekapKeuanganSuperAdminController::class, 'index'])->name('rekap-keuangan');
+    });
+    Route::name('admin-keamanan.')->group(function () {
+      Route::get('data-keamanan', [DataKeamananSuperAdminController::class, 'index'])->name('data-keamanan');
+      Route::get('laporan-pelanggaran', [LaporanPelanggaranSuperAdminController::class, 'index'])->name('laporan-pelanggaran');
+      Route::get('jadwal-patroli', [JadwalPatroliSuperAdminController::class, 'index'])->name('jadwal-patroli');
+      Route::get('buku-tamu', [BukuTamuSuperAdminController::class, 'index'])->name('buku-tamu');
+      Route::get('izin-keluar', [IzinKeluarSuperAdminController::class, 'index'])->name('izin-keluar');
+      Route::get('izin-masuk', [IzinMasukSuperAdminController::class, 'index'])->name('izin-masuk');
+      Route::get('kamera-keamanan', [KameraKeamananSuperAdminController::class, 'index'])->name('kamera-keamanan');
+      Route::get('catatan-pengawasan', [CatatanPengawasanSuperAdminController::class, 'index'])->name('catatan-pengawasan');
+      Route::get('status-keamanan', [StatusKeamananSuperAdminController::class, 'index'])->name('status-keamanan');
+      Route::get('laporan-keamanan', [LaporanKeamananSuperAdminController::class, 'index'])->name('laporan-keamanan');
+    });
+    Route::name('admin-pendidikan.')->group(function () {
+      Route::get('data-pelajaran', [DataPelajaranSuperAdminController::class, 'index'])->name('data-pelajaran');
+      Route::get('jadwal-pelajaran', [JadwalPelajaranSuperAdminController::class, 'index'])->name('jadwal-pelajaran');
+      Route::get('jadwal-ujian', [JadwalUjianSuperAdminController::class, 'index'])->name('jadwal-ujian');
+      Route::get('nilai-santri', [NilaiSantriSuperAdminController::class, 'index'])->name('nilai-santri');
+      Route::get('laporan-akademik', [LaporanAkademikSuperAdminController::class, 'index'])->name('laporan-akademik');
+      Route::get('absensi-kelas', [AbsensiKelasSuperAdminController::class, 'index'])->name('absensi-kelas');
+      Route::get('rekap-absensi', [RekapAbsensiSuperAdminController::class, 'index'])->name('rekap-absensi');
+      Route::get('bahan-ajar', [BahanAjarSuperAdminController::class, 'index'])->name('bahan-ajar');
+      Route::get('laporan-pendidikan', [LaporanPendidikanSuperAdminController::class, 'index'])->name('laporan-pendidikan');
+      Route::get('evaluasi-akademik', [EvaluasiAkademikSuperAdminController::class, 'index'])->name('evaluasi-akademik');
+    });
+    Route::name('admin-kesehatan.')->group(function () {
+      Route::get('data-kesehatan', [DataKesehatanSuperAdminController::class, 'index'])->name('data-kesehatan');
+      Route::get('rekam-medis', [RekamMedisSuperAdminController::class, 'index'])->name('rekam-medis');
+      Route::get('obat-pesantren', [ObatPesantrenSuperAdminController::class, 'index'])->name('obat-pesantren');
+      Route::get('stok-obat', [StokObatSuperAdminController::class, 'index'])->name('stok-obat');
+      Route::get('layanan-kesehatan', [LayananKesehatanSuperAdminController::class, 'index'])->name('layanan-kesehatan');
+      Route::get('pemeriksaan-santri', [PemeriksaanSantriSuperAdminController::class, 'index'])->name('pemeriksaan-santri');
+      Route::get('laporan-kesehatan', [LaporanKesehatanSuperAdminController::class, 'index'])->name('laporan-kesehatan');
+      Route::get('rujukan-medis', [RujukanMedisSuperAdminController::class, 'index'])->name('rujukan-medis');
+      Route::get('catatan-klinik', [CatatanKlinikSuperAdminController::class, 'index'])->name('catatan-klinik');
+      Route::get('jadwal-klinik', [JadwalKlinikSuperAdminController::class, 'index'])->name('jadwal-klinik');
+    });
+    Route::name('admin-asrama.')->group(function () {
+      Route::get('data-asrama', [DataAsramaSuperAdminController::class, 'index'])->name('data-asrama');
+      Route::get('atur-asrama', [AturAsramaSuperAdminController::class, 'index'])->name('atur-asrama');
+      Route::get('jadwal-asrama', [JadwalAsramaSuperAdminController::class, 'index'])->name('jadwal-asrama');
+      Route::get('kegiatan-asrama', [KegiatanAsramaSuperAdminController::class, 'index'])->name('kegiatan-asrama');
+      Route::get('inventaris-asrama', [InventarisAsramaSuperAdminController::class, 'index'])->name('inventaris-asrama');
+      Route::get('pengurus-asrama', [PengurusAsramaSuperAdminController::class, 'index'])->name('pengurus-asrama');
+      Route::get('laporan-asrama', [LaporanAsramaSuperAdminController::class, 'index'])->name('laporan-asrama');
+      Route::get('penghuni-asrama', [PenghuniAsramaSuperAdminController::class, 'index'])->name('penghuni-asrama');
+      Route::get('kebijakan-asrama', [KebijakanAsramaSuperAdminController::class, 'index'])->name('kebijakan-asrama');
+      Route::get('status-asrama', [StatusAsramaSuperAdminController::class, 'index'])->name('status-asrama');
+    });
+    Route::name('admin-kamar.')->group(function () {
+      Route::get('data-kamar', [DataKamarSuperAdminController::class, 'index'])->name('data-kamar');
+      Route::get('atur-kamar', [AturKamarSuperAdminController::class, 'index'])->name('atur-kamar');
+      Route::get('penempatan-santri', [PenempatanSantriSuperAdminController::class, 'index'])->name('penempatan-santri');
+      Route::get('perpindahan-kamar', [PerpindahanKamarSuperAdminController::class, 'index'])->name('perpindahan-kamar');
+      Route::get('inventaris-kamar', [InventarisKamarSuperAdminController::class, 'index'])->name('inventaris-kamar');
+      Route::get('kebersihan-kamar', [KebersihanKamarSuperAdminController::class, 'index'])->name('kebersihan-kamar');
+      Route::get('laporan-kamar', [LaporanKamarSuperAdminController::class, 'index'])->name('laporan-kamar');
+      Route::get('jadwal-kamar', [JadwalKamarSuperAdminController::class, 'index'])->name('jadwal-kamar');
+      Route::get('status-hunian', [StatusHunianSuperAdminController::class, 'index'])->name('status-hunian');
+      Route::get('pengurus-kamar', [PengurusKamarSuperAdminController::class, 'index'])->name('pengurus-kamar');
+    });
+    Route::name('admin-alumni-pusat.')->group(function () {
+      Route::get('data-alumni', [DataAlumniSuperAdminController::class, 'index'])->name('data-alumni');
+      Route::get('registrasi-alumni', [RegistrasiAlumniSuperAdminController::class, 'index'])->name('registrasi-alumni');
+      Route::get('validasi-alumni', [ValidasiAlumniSuperAdminController::class, 'index'])->name('validasi-alumni');
+      Route::get('struktur-pusat', [StrukturPusatSuperAdminController::class, 'index'])->name('struktur-pusat');
+      Route::get('program-pusat', [ProgramPusatSuperAdminController::class, 'index'])->name('program-pusat');
+      Route::get('agenda-pusat', [AgendaPusatSuperAdminController::class, 'index'])->name('agenda-pusat');
+      Route::get('kegiatan-pusat', [KegiatanPusatSuperAdminController::class, 'index'])->name('kegiatan-pusat');
+      Route::get('laporan-pusat', [LaporanPusatSuperAdminController::class, 'index'])->name('laporan-pusat');
+      Route::get('berita-alumni', [BeritaAlumniSuperAdminController::class, 'index'])->name('berita-alumni');
+      Route::get('arsip-alumni', [ArsipAlumniSuperAdminController::class, 'index'])->name('arsip-alumni');
+      Route::get('notifikasi-pusat', [NotifikasiPusatSuperAdminController::class, 'index'])->name('notifikasi-pusat');
+      Route::get('dokumen-pusat', [DokumenPusatSuperAdminController::class, 'index'])->name('dokumen-pusat');
+    });
+    Route::name('admin-alumni-wilayah.')->group(function () {
+      Route::get('data-wilayah', [DataWilayahSuperAdminController::class, 'index'])->name('data-wilayah');
+      Route::get('validasi-wilayah', [ValidasiWilayahSuperAdminController::class, 'index'])->name('validasi-wilayah');
+      Route::get('struktur-wilayah', [StrukturWilayahSuperAdminController::class, 'index'])->name('struktur-wilayah');
+      Route::get('program-wilayah', [ProgramWilayahSuperAdminController::class, 'index'])->name('program-wilayah');
+      Route::get('agenda-wilayah', [AgendaWilayahSuperAdminController::class, 'index'])->name('agenda-wilayah');
+      Route::get('kegiatan-wilayah', [KegiatanWilayahSuperAdminController::class, 'index'])->name('kegiatan-wilayah');
+      Route::get('laporan-wilayah', [LaporanWilayahSuperAdminController::class, 'index'])->name('laporan-wilayah');
+      Route::get('berita-wilayah', [BeritaWilayahSuperAdminController::class, 'index'])->name('berita-wilayah');
+      Route::get('arsip-wilayah', [ArsipWilayahSuperAdminController::class, 'index'])->name('arsip-wilayah');
+      Route::get('dokumen-wilayah', [DokumenWilayahSuperAdminController::class, 'index'])->name('dokumen-wilayah');
+    });
+    Route::name('admin-alumni-cabang.')->group(function () {
+      Route::get('data-cabang', [DataCabangSuperAdminController::class, 'index'])->name('data-cabang');
+      Route::get('validasi-cabang', [ValidasiCabangSuperAdminController::class, 'index'])->name('validasi-cabang');
+      Route::get('struktur-cabang', [StrukturCabangSuperAdminController::class, 'index'])->name('struktur-cabang');
+      Route::get('program-cabang', [ProgramCabangSuperAdminController::class, 'index'])->name('program-cabang');
+      Route::get('agenda-cabang', [AgendaCabangSuperAdminController::class, 'index'])->name('agenda-cabang');
+      Route::get('kegiatan-cabang', [KegiatanCabangSuperAdminController::class, 'index'])->name('kegiatan-cabang');
+      Route::get('laporan-cabang', [LaporanCabangSuperAdminController::class, 'index'])->name('laporan-cabang');
+      Route::get('berita-cabang', [BeritaCabangSuperAdminController::class, 'index'])->name('berita-cabang');
+      Route::get('arsip-cabang', [ArsipCabangSuperAdminController::class, 'index'])->name('arsip-cabang');
+      Route::get('dokumen-cabang', [DokumenCabangSuperAdminController::class, 'index'])->name('dokumen-cabang');
+    });
+    Route::name('admin-alumni-regional.')->group(function () {
+      Route::get('data-regional', [DataRegionalSuperAdminController::class, 'index'])->name('data-regional');
+      Route::get('validasi-regional', [ValidasiRegionalSuperAdminController::class, 'index'])->name('validasi-regional');
+      Route::get('struktur-regional', [StrukturRegionalSuperAdminController::class, 'index'])->name('struktur-regional');
+      Route::get('program-regional', [ProgramRegionalSuperAdminController::class, 'index'])->name('program-regional');
+      Route::get('agenda-regional', [AgendaRegionalSuperAdminController::class, 'index'])->name('agenda-regional');
+      Route::get('kegiatan-regional', [KegiatanRegionalSuperAdminController::class, 'index'])->name('kegiatan-regional');
+      Route::get('laporan-regional', [LaporanRegionalSuperAdminController::class, 'index'])->name('laporan-regional');
+      Route::get('berita-regional', [BeritaRegionalSuperAdminController::class, 'index'])->name('berita-regional');
+      Route::get('arsip-regional', [ArsipRegionalSuperAdminController::class, 'index'])->name('arsip-regional');
+      Route::get('dokumen-regional', [DokumenRegionalSuperAdminController::class, 'index'])->name('dokumen-regional');
+    });
+    Route::name('admin-alumni-daerah.')->group(function () {
+      Route::get('data-daerah', [DataDaerahSuperAdminController::class, 'index'])->name('data-daerah');
+      Route::get('validasi-daerah', [ValidasiDaerahSuperAdminController::class, 'index'])->name('validasi-daerah');
+      Route::get('struktur-daerah', [StrukturDaerahSuperAdminController::class, 'index'])->name('struktur-daerah');
+      Route::get('program-daerah', [ProgramDaerahSuperAdminController::class, 'index'])->name('program-daerah');
+      Route::get('agenda-daerah', [AgendaDaerahSuperAdminController::class, 'index'])->name('agenda-daerah');
+      Route::get('kegiatan-daerah', [KegiatanDaerahSuperAdminController::class, 'index'])->name('kegiatan-daerah');
+      Route::get('laporan-daerah', [LaporanDaerahSuperAdminController::class, 'index'])->name('laporan-daerah');
+      Route::get('berita-daerah', [BeritaDaerahSuperAdminController::class, 'index'])->name('berita-daerah');
+      Route::get('arsip-daerah', [ArsipDaerahSuperAdminController::class, 'index'])->name('arsip-daerah');
+      Route::get('dokumen-daerah', [DokumenDaerahSuperAdminController::class, 'index'])->name('dokumen-daerah');
+    });
+    Route::name('santri.')->group(function () {
+      Route::get('profil-santri', [ProfilSantriSuperAdminController::class, 'index'])->name('profil-santri');
+      Route::get('jadwal-santri', [JadwalSantriSuperAdminController::class, 'index'])->name('jadwal-santri');
+      Route::get('rekap-nilai', [RekapNilaiSuperAdminController::class, 'index'])->name('rekap-nilai');
+      Route::get('absensi-santri', [AbsensiSantriSuperAdminController::class, 'index'])->name('absensi-santri');
+      Route::get('pelanggaran-santri', [PelanggaranSantriSuperAdminController::class, 'index'])->name('pelanggaran-santri');
+      Route::get('prestasi-santri', [PrestasiSantriSuperAdminController::class, 'index'])->name('prestasi-santri');
+      Route::get('kesehatan-santri', [KesehatanSantriSuperAdminController::class, 'index'])->name('kesehatan-santri');
+      Route::get('keamanan-santri', [KeamananSantriSuperAdminController::class, 'index'])->name('keamanan-santri');
+      Route::get('keuangan-santri', [KeuanganSantriSuperAdminController::class, 'index'])->name('keuangan-santri');
+    });
+    Route::name('wali-santri.')->group(function () {
+      Route::get('profil-anak', [ProfilAnakSuperAdminController::class, 'index'])->name('profil-anak');
+      Route::get('laporan-anak', [LaporanAnakSuperAdminController::class, 'index'])->name('laporan-anak');
+      Route::get('nilai-anak', [NilaiAnakSuperAdminController::class, 'index'])->name('nilai-anak');
+      Route::get('absensi-anak', [AbsensiAnakSuperAdminController::class, 'index'])->name('absensi-anak');
+      Route::get('keuangan-anak', [KeuanganAnakSuperAdminController::class, 'index'])->name('keuangan-anak');
+      Route::get('kesehatan-anak', [KesehatanAnakSuperAdminController::class, 'index'])->name('kesehatan-anak');
+      Route::get('keamanan-anak', [KeamananAnakSuperAdminController::class, 'index'])->name('keamanan-anak');
+      Route::get('riwayat-anak', [RiwayatAnakSuperAdminController::class, 'index'])->name('riwayat-anak');
+      Route::get('pesan-wali', [PesanWaliSuperAdminController::class, 'index'])->name('pesan-wali');
+      Route::get('informasi-pesantren', [InformasiPesantrenSuperAdminController::class, 'index'])->name('informasi-pesantren');
+    });
+    Route::name('alumni.')->group(function () {
+      Route::get('jejaring-alumni', [JejaringAlumniSuperAdminController::class, 'index'])->name('jejaring-alumni');
+      Route::get('donasi-sosial', [DonasiSosialSuperAdminController::class, 'index'])->name('donasi-sosial');
+      Route::get('mentoring-santri', [MentoringSantriSuperAdminController::class, 'index'])->name('mentoring-santri');
+      Route::get('kegiatan-alumni', [KegiatanAlumniSuperAdminController::class, 'index'])->name('kegiatan-alumni');
+      Route::get('dakwah-alumni', [DakwahAlumniSuperAdminController::class, 'index'])->name('dakwah-alumni');
+      Route::get('update-data', [UpdateDataSuperAdminController::class, 'index'])->name('update-data');
+      Route::get('komunikasi-alumni', [KomunikasiAlumniSuperAdminController::class, 'index'])->name('komunikasi-alumni');
+    });
+    Route::name('user-baru.')->group(function () {
+      Route::get('profil-pesantren', [ProfilPesantrenSuperAdminController::class, 'index'])->name('profil-pesantren');
+      Route::get('struktur-organisasi', [StrukturOrganisasiSuperAdminController::class, 'index'])->name('struktur-organisasi');
+      Route::get('program-pesantren', [ProgramPesantrenSuperAdminController::class, 'index'])->name('program-pesantren');
+      Route::get('jadwal-kegiatan', [JadwalKegiatanSuperAdminController::class, 'index'])->name('jadwal-kegiatan');
+      Route::get('berita-pesantren', [BeritaPesantrenSuperAdminController::class, 'index'])->name('berita-pesantren');
+      Route::get('kontak-pesantren', [KontakPesantrenSuperAdminController::class, 'index'])->name('kontak-pesantren');
+      Route::get('pendaftaran-santri', [PendaftaranSantriSuperAdminController::class, 'index'])->name('pendaftaran-santri');
+      Route::get('informasi-asrama', [InformasiAsramaSuperAdminController::class, 'index'])->name('informasi-asrama');
+      Route::get('informasi-kamar', [InformasiKamarSuperAdminController::class, 'index'])->name('informasi-kamar');
+      Route::get('informasi-keamanan', [InformasiKeamananSuperAdminController::class, 'index'])->name('informasi-keamanan');
+      Route::get('informasi-kesehatan', [InformasiKesehatanSuperAdminController::class, 'index'])->name('informasi-kesehatan');
+      Route::get('informasi-pendidikan', [InformasiPendidikanSuperAdminController::class, 'index'])->name('informasi-pendidikan');
+    });
+  });

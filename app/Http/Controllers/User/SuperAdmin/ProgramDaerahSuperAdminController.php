@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class ProgramDaerahSuperAdminController extends Controller
 {
-    //
+  public function index()
+  {
+    return view('content.user.super-admin.program-daerah');
+  }
 }
