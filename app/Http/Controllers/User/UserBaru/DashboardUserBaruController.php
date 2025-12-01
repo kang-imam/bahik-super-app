@@ -9,6 +9,6 @@ class DashboardUserBaruController extends Controller
 {
   public function index()
   {
-    return view('content.user.user-baru.dashboard');
+    return view('content.user.coming-soon');
   }
 }

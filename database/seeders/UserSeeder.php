@@ -14,10 +14,11 @@ class UserSeeder extends Seeder
   {
     $password = 'password1234';
     $simpleRoles = [
-      'User Baru'          => 'userbaru@bahik.online',
-      'Super Admin'        => 'superadmin@bahik.online',
-      'Dewan Kiai'         => 'dewankiai@bahik.online',
-      'Admin Alumni Pusat' => 'adminalumnipusat@bahik.online',
+      'User Baru'          => 'userbaru1@bahik.online',
+      'Super Admin'        => 'superadmin1@bahik.online',
+      'Super Admin'        => 'imamulmutaqinalhanif@gmail.com',
+      'Dewan Kiai'         => 'dewankiai1@bahik.online',
+      'Admin Alumni Pusat' => 'adminalumnipusat1@bahik.online',
     ];
     foreach ($simpleRoles as $roleName => $email) {
       $role = Role::where('name', $roleName)->first();

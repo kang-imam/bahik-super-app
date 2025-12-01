@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "user-baru-dashboard",
-      "url": "/user-baru-dashboard"
+      "slug": "user-baru.dashboard",
+      "url": "/user-baru/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,74 +12,74 @@
     {
       "icon": "menu-icon icon-base ti tabler-home",
       "name": "Profil Pesantren",
-      "slug": "user-baru-profil-pesantren",
-      "url": "/user-baru-profil-pesantren"
+      "slug": "user-baru.profil-pesantren",
+      "url": "/user-baru/profil-pesantren"
     },
     {
       "icon": "menu-icon icon-base ti tabler-users",
       "name": "Struktur Organisasi",
-      "slug": "user-baru-struktur-organisasi",
-      "url": "/user-baru-struktur-organisasi"
+      "slug": "user-baru.struktur-organisasi",
+      "url": "/user-baru/struktur-organisasi"
     },
     {
       "icon": "menu-icon icon-base ti tabler-clipboard",
       "name": "Program Pesantren",
-      "slug": "user-baru-program-pesantren",
-      "url": "/user-baru-program-pesantren"
+      "slug": "user-baru.program-pesantren",
+      "url": "/user-baru/program-pesantren"
     },
     {
       "icon": "menu-icon icon-base ti tabler-calendar",
       "name": "Jadwal Kegiatan",
-      "slug": "user-baru-jadwal-kegiatan",
-      "url": "/user-baru-jadwal-kegiatan"
+      "slug": "user-baru.jadwal-kegiatan",
+      "url": "/user-baru/jadwal-kegiatan"
     },
     {
       "icon": "menu-icon icon-base ti tabler-news",
       "name": "Berita Pesantren",
-      "slug": "user-baru-berita-pesantren",
-      "url": "/user-baru-berita-pesantren"
+      "slug": "user-baru.berita-pesantren",
+      "url": "/user-baru/berita-pesantren"
     },
     {
       "icon": "menu-icon icon-base ti tabler-phone",
       "name": "Kontak Pesantren",
-      "slug": "user-baru-kontak-pesantren",
-      "url": "/user-baru-kontak-pesantren"
+      "slug": "user-baru.kontak-pesantren",
+      "url": "/user-baru/kontak-pesantren"
     },
     {
       "icon": "menu-icon icon-base ti tabler-pencil",
       "name": "Pendaftaran Santri",
-      "slug": "user-baru-pendaftaran-santri",
-      "url": "/user-baru-pendaftaran-santri"
+      "slug": "user-baru.pendaftaran-santri",
+      "url": "/user-baru/pendaftaran-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-home",
       "name": "Informasi Asrama",
-      "slug": "user-baru-informasi-asrama",
-      "url": "/user-baru-informasi-asrama"
+      "slug": "user-baru.informasi-asrama",
+      "url": "/user-baru/informasi-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-bed",
       "name": "Informasi Kamar",
-      "slug": "user-baru-informasi-kamar",
-      "url": "/user-baru-informasi-kamar"
+      "slug": "user-baru.informasi-kamar",
+      "url": "/user-baru/informasi-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-lock",
       "name": "Informasi Keamanan",
-      "slug": "user-baru-informasi-keamanan",
-      "url": "/user-baru-informasi-keamanan"
+      "slug": "user-baru.informasi-keamanan",
+      "url": "/user-baru/informasi-keamanan"
     },
     {
       "icon": "menu-icon icon-base ti tabler-heart",
       "name": "Informasi Kesehatan",
-      "slug": "user-baru-informasi-kesehatan",
-      "url": "/user-baru-informasi-kesehatan"
+      "slug": "user-baru.informasi-kesehatan",
+      "url": "/user-baru/informasi-kesehatan"
     },
     {
       "icon": "menu-icon icon-base ti tabler-book",
       "name": "Informasi Pendidikan",
-      "slug": "user-baru-informasi-pendidikan",
-      "url": "/user-baru-informasi-pendidikan"
+      "slug": "user-baru.informasi-pendidikan",
+      "url": "/user-baru/informasi-pendidikan"
     }
   ]
 }
