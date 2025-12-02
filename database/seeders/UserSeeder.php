@@ -12,11 +12,10 @@ class UserSeeder extends Seeder
 {
   public function run(): void
   {
-    $password = 'password1234';
+    $password = 'password123';
     $simpleRoles = [
       'User Baru'          => 'userbaru1@bahik.online',
       'Super Admin'        => 'superadmin1@bahik.online',
-      'Super Admin'        => 'imamulmutaqinalhanif@gmail.com',
       'Dewan Kiai'         => 'dewankiai1@bahik.online',
       'Admin Alumni Pusat' => 'adminalumnipusat1@bahik.online',
     ];
@@ -49,20 +48,20 @@ class UserSeeder extends Seeder
       $role = Role::where('name', $roleName)->first();
       if (!$role) continue;
       User::updateOrCreate(
-        ['email' => strtolower(str_replace(' ', '', $roleName)) . 'putra@bahik.online'],
+        ['email' => strtolower(str_replace(' ', '', $roleName)) . 'putra1@bahik.online'],
         [
           'name' => $roleName . ' Putra',
-          'email' => strtolower(str_replace(' ', '', $roleName)) . 'putra@bahik.online',
+          'email' => strtolower(str_replace(' ', '', $roleName)) . 'putra1@bahik.online',
           'password' => Hash::make($password),
           'role_id' => $role->id,
           'jenis_kelamin_id' => $genderPutra->id,
         ]
       );
       User::updateOrCreate(
-        ['email' => strtolower(str_replace(' ', '', $roleName)) . 'putri@bahik.online'],
+        ['email' => strtolower(str_replace(' ', '', $roleName)) . 'putri1@bahik.online'],
         [
           'name' => $roleName . ' Putri',
-          'email' => strtolower(str_replace(' ', '', $roleName)) . 'putri@bahik.online',
+          'email' => strtolower(str_replace(' ', '', $roleName)) . 'putri1@bahik.online',
           'password' => Hash::make($password),
           'role_id' => $role->id,
           'jenis_kelamin_id' => $genderPutri->id,

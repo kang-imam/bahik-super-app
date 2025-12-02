@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "admin-asrama-dashboard",
-      "url": "/admin-asrama-dashboard"
+      "slug": "admin-asrama.dashboard",
+      "url": "/admin-asrama/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,62 +12,62 @@
     {
       "icon": "menu-icon icon-base ti tabler-building-community",
       "name": "Data Asrama",
-      "slug": "admin-asrama-data-asrama",
-      "url": "/admin-asrama-data-asrama"
+      "slug": "admin-asrama.data-asrama",
+      "url": "/admin-asrama/data-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-settings",
       "name": "Atur Asrama",
-      "slug": "admin-asrama-atur-asrama",
-      "url": "/admin-asrama-atur-asrama"
+      "slug": "admin-asrama.atur-asrama",
+      "url": "/admin-asrama/atur-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-calendar",
       "name": "Jadwal Asrama",
-      "slug": "admin-asrama-jadwal-asrama",
-      "url": "/admin-asrama-jadwal-asrama"
+      "slug": "admin-asrama.jadwal-asrama",
+      "url": "/admin-asrama/jadwal-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-activity",
       "name": "Kegiatan Asrama",
-      "slug": "admin-asrama-kegiatan-asrama",
-      "url": "/admin-asrama-kegiatan-asrama"
+      "slug": "admin-asrama.kegiatan-asrama",
+      "url": "/admin-asrama/kegiatan-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-archive",
       "name": "Inventaris Asrama",
-      "slug": "admin-asrama-inventaris-asrama",
-      "url": "/admin-asrama-inventaris-asrama"
+      "slug": "admin-asrama.inventaris-asrama",
+      "url": "/admin-asrama/inventaris-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-users-group",
       "name": "Pengurus Asrama",
-      "slug": "admin-asrama-pengurus-asrama",
-      "url": "/admin-asrama-pengurus-asrama"
+      "slug": "admin-asrama.pengurus-asrama",
+      "url": "/admin-asrama/pengurus-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-report-analytics",
       "name": "Laporan Asrama",
-      "slug": "admin-asrama-laporan-asrama",
-      "url": "/admin-asrama-laporan-asrama"
+      "slug": "admin-asrama.laporan-asrama",
+      "url": "/admin-asrama/laporan-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-user",
       "name": "Penghuni Asrama",
-      "slug": "admin-asrama-penghuni-asrama",
-      "url": "/admin-asrama-penghuni-asrama"
+      "slug": "admin-asrama.penghuni-asrama",
+      "url": "/admin-asrama/penghuni-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-file-text",
       "name": "Kebijakan Asrama",
-      "slug": "admin-asrama-kebijakan-asrama",
-      "url": "/admin-asrama-kebijakan-asrama"
+      "slug": "admin-asrama.kebijakan-asrama",
+      "url": "/admin-asrama/kebijakan-asrama"
     },
     {
       "icon": "menu-icon icon-base ti tabler-shield-check",
       "name": "Status Asrama",
-      "slug": "admin-asrama-status-asrama",
-      "url": "/admin-asrama-status-asrama"
+      "slug": "admin-asrama.status-asrama",
+      "url": "/admin-asrama/status-asrama"
     }
   ]
 }

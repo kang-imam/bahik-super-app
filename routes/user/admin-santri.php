@@ -15,7 +15,7 @@ use App\Http\Controllers\User\AdminSantri\VerifikasiDokumenAdminSantriController
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:Admin Santri'])
   ->prefix('admin-santri')->name('admin-santri.')->group(function () {
-    Route::get('dashboard', [DashboardAdminSantriController::class, 'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardAdminSantriController::class, 'index'])->name('dashboard-santri');
     Route::get('data-santri', [DataSantriAdminSantriController::class, 'index'])->name('data-santri');
     Route::get('registrasi-santri', [RegistrasiSantriAdminSantriController::class, 'index'])->name('registrasi-santri');
     Route::get('mutasi-santri', [MutasiSantriAdminSantriController::class, 'index'])->name('mutasi-santri');

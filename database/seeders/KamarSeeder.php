@@ -13,7 +13,7 @@ class KamarSeeder extends Seeder
 {
   public function run(): void
   {
-    $password = 'password1234';
+    $password = 'password123';
     $roleAdminKamar = Role::where('slug', 'admin-kamar')->first();
     $emailCounter = 1;
     $asramas = Asrama::all();

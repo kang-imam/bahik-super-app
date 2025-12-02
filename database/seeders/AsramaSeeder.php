@@ -16,7 +16,7 @@ class AsramaSeeder extends Seeder
     $putra = JenisKelamin::where('kode', 'L')->first();
     $putri = JenisKelamin::where('kode', 'P')->first();
     $adminAsramaRole = Role::where('name', 'Admin Asrama')->first();
-    $password = 'password1234';
+    $password = 'password123';
     $asramaData = [
       ['nama' => 'Asrama Putra 1', 'jk' => $putra->id],
       ['nama' => 'Asrama Putra 2', 'jk' => $putra->id],

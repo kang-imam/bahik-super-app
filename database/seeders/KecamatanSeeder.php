@@ -36,7 +36,7 @@ class KecamatanSeeder extends Seeder
           [
             'name'       => $randomName,
             'email'      => $email,
-            'password'   => Hash::make('password1234'),
+            'password'   => Hash::make('password123'),
             'role_id'    => $role->id ?? null,
             'akses_type' => Kecamatan::class,
             'akses_id'   => $kecamatan->id,

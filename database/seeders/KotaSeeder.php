@@ -47,7 +47,7 @@ class KotaSeeder extends Seeder
         [
           'name'       => $randomName,
           'email'      => $email,
-          'password'   => Hash::make('password1234'),
+          'password'   => Hash::make('password123'),
           'role_id'    => $role->id ?? null,
           'akses_type' => Kota::class,
           'akses_id'   => $kota->id,

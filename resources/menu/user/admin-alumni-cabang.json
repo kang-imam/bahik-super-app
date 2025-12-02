@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "admin-alumni-cabang-dashboard",
-      "url": "/admin-alumni-cabang-dashboard"
+      "slug": "admin-alumni-cabang.dashboard",
+      "url": "/admin-alumni-cabang/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,62 +12,62 @@
     {
       "icon": "menu-icon icon-base ti tabler-building",
       "name": "Data Cabang",
-      "slug": "admin-alumni-cabang-data-cabang",
-      "url": "/admin-alumni-cabang-data-cabang"
+      "slug": "admin-alumni-cabang.data-cabang",
+      "url": "/admin-alumni-cabang/data-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-user-check",
       "name": "Validasi Cabang",
-      "slug": "admin-alumni-cabang-validasi-cabang",
-      "url": "/admin-alumni-cabang-validasi-cabang"
+      "slug": "admin-alumni-cabang.validasi-cabang",
+      "url": "/admin-alumni-cabang/validasi-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-sitemap",
       "name": "Struktur Cabang",
-      "slug": "admin-alumni-cabang-struktur-cabang",
-      "url": "/admin-alumni-cabang-struktur-cabang"
+      "slug": "admin-alumni-cabang.struktur-cabang",
+      "url": "/admin-alumni-cabang/struktur-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-clipboard-list",
       "name": "Program Cabang",
-      "slug": "admin-alumni-cabang-program-cabang",
-      "url": "/admin-alumni-cabang-program-cabang"
+      "slug": "admin-alumni-cabang.program-cabang",
+      "url": "/admin-alumni-cabang/program-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-calendar-event",
       "name": "Agenda Cabang",
-      "slug": "admin-alumni-cabang-agenda-cabang",
-      "url": "/admin-alumni-cabang-agenda-cabang"
+      "slug": "admin-alumni-cabang.agenda-cabang",
+      "url": "/admin-alumni-cabang/agenda-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-activity",
       "name": "Kegiatan Cabang",
-      "slug": "admin-alumni-cabang-kegiatan-cabang",
-      "url": "/admin-alumni-cabang-kegiatan-cabang"
+      "slug": "admin-alumni-cabang.kegiatan-cabang",
+      "url": "/admin-alumni-cabang/kegiatan-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-report-analytics",
       "name": "Laporan Cabang",
-      "slug": "admin-alumni-cabang-laporan-cabang",
-      "url": "/admin-alumni-cabang-laporan-cabang"
+      "slug": "admin-alumni-cabang.laporan-cabang",
+      "url": "/admin-alumni-cabang/laporan-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-news",
       "name": "Berita Cabang",
-      "slug": "admin-alumni-cabang-berita-cabang",
-      "url": "/admin-alumni-cabang-berita-cabang"
+      "slug": "admin-alumni-cabang.berita-cabang",
+      "url": "/admin-alumni-cabang/berita-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-archive",
       "name": "Arsip Cabang",
-      "slug": "admin-alumni-cabang-arsip-cabang",
-      "url": "/admin-alumni-cabang-arsip-cabang"
+      "slug": "admin-alumni-cabang.arsip-cabang",
+      "url": "/admin-alumni-cabang/arsip-cabang"
     },
     {
       "icon": "menu-icon icon-base ti tabler-folder",
       "name": "Dokumen Cabang",
-      "slug": "admin-alumni-cabang-dokumen-cabang",
-      "url": "/admin-alumni-cabang-dokumen-cabang"
+      "slug": "admin-alumni-cabang.dokumen-cabang",
+      "url": "/admin-alumni-cabang/dokumen-cabang"
     }
   ]
 }

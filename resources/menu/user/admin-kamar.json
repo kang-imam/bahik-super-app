@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "admin-kamar-dashboard",
-      "url": "/admin-kamar-dashboard"
+      "slug": "admin-kamar.dashboard",
+      "url": "/admin-kamar/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,62 +12,62 @@
     {
       "icon": "menu-icon icon-base ti tabler-door",
       "name": "Data Kamar",
-      "slug": "admin-kamar-data-kamar",
-      "url": "/admin-kamar-data-kamar"
+      "slug": "admin-kamar.data-kamar",
+      "url": "/admin-kamar/data-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-settings",
       "name": "Atur Kamar",
-      "slug": "admin-kamar-atur-kamar",
-      "url": "/admin-kamar-atur-kamar"
+      "slug": "admin-kamar.atur-kamar",
+      "url": "/admin-kamar/atur-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-user-check",
       "name": "Penempatan Santri",
-      "slug": "admin-kamar-penempatan-santri",
-      "url": "/admin-kamar-penempatan-santri"
+      "slug": "admin-kamar.penempatan-santri",
+      "url": "/admin-kamar/penempatan-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-transfer",
       "name": "Perpindahan Kamar",
-      "slug": "admin-kamar-perpindahan-kamar",
-      "url": "/admin-kamar-perpindahan-kamar"
+      "slug": "admin-kamar.perpindahan-kamar",
+      "url": "/admin-kamar/perpindahan-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-archive",
       "name": "Inventaris Kamar",
-      "slug": "admin-kamar-inventaris-kamar",
-      "url": "/admin-kamar-inventaris-kamar"
+      "slug": "admin-kamar.inventaris-kamar",
+      "url": "/admin-kamar/inventaris-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-trash",
       "name": "Kebersihan Kamar",
-      "slug": "admin-kamar-kebersihan-kamar",
-      "url": "/admin-kamar-kebersihan-kamar"
+      "slug": "admin-kamar.kebersihan-kamar",
+      "url": "/admin-kamar/kebersihan-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-report-analytics",
       "name": "Laporan Kamar",
-      "slug": "admin-kamar-laporan-kamar",
-      "url": "/admin-kamar-laporan-kamar"
+      "slug": "admin-kamar.laporan-kamar",
+      "url": "/admin-kamar/laporan-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-calendar",
       "name": "Jadwal Kamar",
-      "slug": "admin-kamar-jadwal-kamar",
-      "url": "/admin-kamar-jadwal-kamar"
+      "slug": "admin-kamar.jadwal-kamar",
+      "url": "/admin-kamar/jadwal-kamar"
     },
     {
       "icon": "menu-icon icon-base ti tabler-shield-check",
       "name": "Status Hunian",
-      "slug": "admin-kamar-status-hunian",
-      "url": "/admin-kamar-status-hunian"
+      "slug": "admin-kamar.status-hunian",
+      "url": "/admin-kamar/status-hunian"
     },
     {
       "icon": "menu-icon icon-base ti tabler-users-group",
       "name": "Pengurus Kamar",
-      "slug": "admin-kamar-pengurus-kamar",
-      "url": "/admin-kamar-pengurus-kamar"
+      "slug": "admin-kamar.pengurus-kamar",
+      "url": "/admin-kamar/pengurus-kamar"
     }
   ]
 }

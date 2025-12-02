@@ -3,8 +3,8 @@
     {
       "icon": "menu-icon icon-base ti tabler-layout-dashboard",
       "name": "Dashboard",
-      "slug": "alumni-dashboard",
-      "url": "/alumni-dashboard"
+      "slug": "alumni.dashboard",
+      "url": "/alumni/dashboard"
     },
     {
       "menuHeader": "Fitur Utama"
@@ -12,44 +12,44 @@
     {
       "icon": "menu-icon icon-base ti tabler-users",
       "name": "Jejaring Alumni",
-      "slug": "alumni-jejaring-alumni",
-      "url": "/alumni-jejaring-alumni"
+      "slug": "alumni.jejaring-alumni",
+      "url": "/alumni/jejaring-alumni"
     },
     {
       "icon": "menu-icon icon-base ti tabler-heart",
       "name": "Donasi Sosial",
-      "slug": "alumni-donasi-sosial",
-      "url": "/alumni-donasi-sosial"
+      "slug": "alumni.donasi-sosial",
+      "url": "/alumni/donasi-sosial"
     },
     {
       "icon": "menu-icon icon-base ti tabler-chalkboard",
       "name": "Mentoring Santri",
-      "slug": "alumni-mentoring-santri",
-      "url": "/alumni-mentoring-santri"
+      "slug": "alumni.mentoring-santri",
+      "url": "/alumni/mentoring-santri"
     },
     {
       "icon": "menu-icon icon-base ti tabler-activity",
       "name": "Kegiatan Alumni",
-      "slug": "alumni-kegiatan-alumni",
-      "url": "/alumni-kegiatan-alumni"
+      "slug": "alumni.kegiatan-alumni",
+      "url": "/alumni/kegiatan-alumni"
     },
     {
       "icon": "menu-icon icon-base ti tabler-flag",
       "name": "Dakwah Alumni",
-      "slug": "alumni-dakwah-alumni",
-      "url": "/alumni-dakwah-alumni"
+      "slug": "alumni.dakwah-alumni",
+      "url": "/alumni/dakwah-alumni"
     },
     {
       "icon": "menu-icon icon-base ti tabler-refresh",
       "name": "Update Data",
-      "slug": "alumni-update-data",
-      "url": "/alumni-update-data"
+      "slug": "alumni.update-data",
+      "url": "/alumni/update-data"
     },
     {
       "icon": "menu-icon icon-base ti tabler-message",
       "name": "Komunikasi Alumni",
-      "slug": "alumni-komunikasi-alumni",
-      "url": "/alumni-komunikasi-alumni"
+      "slug": "alumni.komunikasi-alumni",
+      "url": "/alumni/komunikasi-alumni"
     }
   ]
 }

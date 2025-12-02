@@ -28,7 +28,7 @@ class SantriSeeder extends Seeder
       $user = User::create([
         'name' => $names[$i - 1],
         'email' => "santri{$i}@bahik.online",
-        'password' => Hash::make('password1234'),
+        'password' => Hash::make('password123'),
         'role_id' => Role::where('slug', 'santri')->value('id'),
       ]);
       Santri::create([

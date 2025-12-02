@@ -15,9 +15,9 @@ use App\Http\Controllers\User\DewanKiai\EvaluasiSantriDewanKiaiController;
 use App\Http\Controllers\User\DewanKiai\KeputusanKiaiDewanKiaiController;
 use App\Http\Controllers\User\DewanKiai\LaporanPesantrenDewanKiaiController;
 
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:Dewan Kiai'])
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'role:Dewan kiai'])
   ->prefix('dewan-kiai')->name('dewan-kiai.')->group(function () {
-    Route::get('dashboard', [DashboardDewanKiaiController::class, 'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardDewanKiaiController::class, 'index'])->name('dashboard-dewan-kiai');
     Route::get('rekap-santri', [RekapSantriDewanKiaiController::class, 'index'])->name('rekap-santri');
     Route::get('rekap-kehadiran', [RekapKehadiranDewanKiaiController::class, 'index'])->name('rekap-kehadiran');
     Route::get('rekap-pelanggaran', [RekapPelanggaranDewanKiaiController::class, 'index'])->name('rekap-pelanggaran');

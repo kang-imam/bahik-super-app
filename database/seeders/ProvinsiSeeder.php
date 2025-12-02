@@ -31,7 +31,7 @@ class ProvinsiSeeder extends Seeder
         [
           'name' => $randomName,
           'email' => $email,
-          'password' => Hash::make('password1234'),
+          'password' => Hash::make('password123'),
           'role_id' => $role->id ?? null,
           'akses_type' => Provinsi::class,
           'akses_id' => $provinsi->id,

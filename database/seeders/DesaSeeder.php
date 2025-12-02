@@ -26,7 +26,7 @@ class DesaSeeder extends Seeder
       User::create([
         'name'          => 'Admin Alumni Daerah ' . $counter,
         'email'         => 'adminalumnidaerah' . $counter . '@bahik.online',
-        'password'      => Hash::make('password1234'),
+        'password'      => Hash::make('password123'),
         'role_id'       => $roleId,
         'akses_id'      => $desa->id,
         'akses_type'    => Desa::class,
@@ -40,7 +40,7 @@ class DesaSeeder extends Seeder
       User::create([
         'name'          => 'Admin Alumni Daerah ' . $counter,
         'email'         => 'adminalumnidaerah' . $counter . '@bahik.online',
-        'password'      => Hash::make('password1234'),
+        'password'      => Hash::make('password123'),
         'role_id'       => $roleId,
         'akses_id'      => $kelurahan->id,
         'akses_type'    => Desa::class,

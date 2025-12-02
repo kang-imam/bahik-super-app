@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Santri;
 use App\Models\WaliSantri;
 use App\Models\Role;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class WaliSantriSeeder extends Seeder
@@ -22,7 +23,7 @@ class WaliSantriSeeder extends Seeder
         ['email' => $email],
         [
           'name' => "Wali dari {$santri->nama_panggilan}",
-          'password' => Str::random(12),
+          'password'      => Hash::make('password123'),
           'role_id' => $role->id,
         ]
       );

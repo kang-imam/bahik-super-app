@@ -9,6 +9,6 @@ class DashboardAdminAlumniCabangController extends Controller
 {
   public function index()
   {
-    return view('content.user.admin-alumni-cabang.dashboard');
+    return view('content.user.coming-soon');
   }
 }
